@@ -1,15 +1,23 @@
 import React from "react";
+import Button from "./Button";
 
-const HeroSection = () => {
+interface Props {
+  Hname: string;
+  Hsubtext: string;
+  custPadding?: string;
+}
+
+const HeroSection = ({ Hname, Hsubtext, custPadding }: Props) => {
   return (
     <div>
-      <div className="jumbotron text-center bg-dark text-white py-5">
+      <div
+        className="jumbotron text-center bg-dark text-white"
+        style={{ padding: custPadding }}
+      >
         <div className="container">
-          <h1 className="display-4">Hi, I'm [Your Name]</h1>
-          <p className="lead">A passionate developer building web solutions</p>
-          <a href="#projects" className="btn btn-primary btn-lg mt-3">
-            See My Work
-          </a>
+          <h1 className="display-4">{Hname}</h1>
+          <p className="lead">{Hsubtext}</p>
+          <Button btnText="See my work" btnLink="" />
         </div>
       </div>
     </div>

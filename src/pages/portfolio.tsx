@@ -10,7 +10,11 @@ const Portfolio: React.FC = () => {
     <div>
       <Navbar />
 
-      <HeroSection />
+      <HeroSection
+        Hname="Hi, I'm Tyler"
+        Hsubtext="A passionate developer"
+        custPadding="3rem 0"
+      />
 
       <Project />
 
