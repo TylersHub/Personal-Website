@@ -1,12 +1,19 @@
 import React from "react";
 
-const Footer = () => {
+interface Props {
+  fText1: string;
+  fText2: string;
+}
+
+const Footer = ({ fText1, fText2 }: Props) => {
   return (
     <div>
       <footer className="bg-light text-center py-4 mt-5">
         <div className="container">
+          <p className="mb-0">{fText1}</p>
           <p className="mb-0">
-            &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+            &copy; {new Date().getFullYear()}
+            {fText2}
           </p>
         </div>
       </footer>
