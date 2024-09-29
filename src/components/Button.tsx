@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/Button.css";
 
 interface Props {
   btnText: string;
@@ -8,7 +9,7 @@ interface Props {
 const Button = ({ btnText, btnLink }: Props) => {
   return (
     <div>
-      <a href={btnLink} className="btn btn-primary" role="button">
+      <a href={btnLink} className="button-hover-animation" role="button">
         {btnText}
       </a>
     </div>
