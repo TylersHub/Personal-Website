@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "./Button";
+import Image from "./Image";
+import meImage from "../assets/me.jpg";
 
 interface Props {
   Hname: string;
@@ -16,6 +18,7 @@ const HeroSection = ({ Hname, Hsubtext, custPadding }: Props) => {
       >
         <div className="container">
           <h1 className="display-4">{Hname}</h1>
+          <Image imgSrc={meImage} imgAlt="Image of Me" imgWidth="30%" />
           <p className="lead">{Hsubtext}</p>
           <Button btnText="See my work" btnLink="" />
         </div>

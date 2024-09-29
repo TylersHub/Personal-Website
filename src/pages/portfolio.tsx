@@ -8,7 +8,15 @@ import Footer from "../components/Footer";
 const Portfolio: React.FC = () => {
   return (
     <div>
-      <Navbar />
+      <div style={{ maxWidth: "100%" }}>
+        <Navbar
+          navMainText="Tyler"
+          navText1="Portfolio"
+          navText2="About"
+          navText3="Contact"
+          navText4="Other"
+        />
+      </div>
 
       <HeroSection
         Hname="Hi, I'm Tyler"
@@ -18,7 +26,9 @@ const Portfolio: React.FC = () => {
 
       <Project />
 
-      <ContactForm />
+      <div>
+        <ContactForm formWidth="50%" textAlign="center" />
+      </div>
 
       <Footer />
     </div>

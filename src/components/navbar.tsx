@@ -1,12 +1,26 @@
 import React from "react";
 
-const Navbar = () => {
+interface Props {
+  navMainText: string;
+  navText1: string;
+  navText2: string;
+  navText3: string;
+  navText4: string;
+}
+
+const Navbar = ({
+  navMainText,
+  navText1,
+  navText2,
+  navText3,
+  navText4,
+}: Props) => {
   return (
-    <div>
+    <div className="maxWidth: 100%">
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
+        <div className="container-fluid" style={{ padding: "0 12rem" }}>
           <a className="navbar-brand" href="#">
-            Navbar
+            {navMainText}
           </a>
           <button
             className="navbar-toggler"
@@ -22,16 +36,16 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
               <a className="nav-link active" aria-current="page" href="#">
-                Home
+                {navText1}
               </a>
               <a className="nav-link" href="#">
-                Features
+                {navText2}
               </a>
               <a className="nav-link" href="#">
-                Pricing
+                {navText3}
               </a>
-              <a className="nav-link disabled" aria-disabled="true">
-                Disabled
+              <a className="nav-link" href="#">
+                {navText4}
               </a>
             </div>
           </div>

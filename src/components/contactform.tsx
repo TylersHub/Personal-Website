@@ -1,8 +1,13 @@
 import React from "react";
 
-const ContactForm = () => {
+interface Props {
+  formWidth: string;
+  textAlign?: "left" | "right" | "center" | "justify" | "initial" | "inherit";
+}
+
+const ContactForm = ({ formWidth, textAlign = "left" }: Props) => {
   return (
-    <div>
+    <div className="mx-auto" style={{ maxWidth: formWidth, textAlign }}>
       <div className="mb-3">
         <label htmlFor="exampleFormControlInput2" className="form-label">
           Name
