@@ -21,10 +21,27 @@ const Portfolio: React.FC = () => {
       <HeroSection
         Hname="Hi, I'm Tyler"
         Hsubtext="A passionate developer"
-        custPadding="3rem 0"
+        heightPadding="6rem 0"
       />
 
-      <Project />
+      <Project
+        projTitle="Project 1"
+        projDesc="Project Description"
+        projLink=""
+        projHeight="6rem 0"
+      />
+      <Project
+        projTitle="Project 2"
+        projDesc="Project Description"
+        projLink=""
+        projHeight="6rem 0"
+      />
+      <Project
+        projTitle="Project 3"
+        projDesc="Project Description"
+        projLink=""
+        projHeight="6rem 0"
+      />
 
       <div>
         <ContactForm formWidth="50%" textAlign="center" />

@@ -6,15 +6,15 @@ import meImage from "../assets/me.jpg";
 interface Props {
   Hname: string;
   Hsubtext: string;
-  custPadding?: string;
+  heightPadding?: string;
 }
 
-const HeroSection = ({ Hname, Hsubtext, custPadding }: Props) => {
+const HeroSection = ({ Hname, Hsubtext, heightPadding }: Props) => {
   return (
     <div>
       <div
         className="jumbotron text-center bg-dark text-white"
-        style={{ padding: custPadding }}
+        style={{ padding: heightPadding }}
       >
         <div className="container">
           <h1 className="display-4">{Hname}</h1>

@@ -18,7 +18,7 @@ const Navbar = ({
   return (
     <div className="maxWidth: 100%">
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid" style={{ padding: "0 12rem" }}>
+        <div className="container-fluid" style={{ padding: "0 13rem" }}>
           <a className="navbar-brand" href="#">
             {navMainText}
           </a>
