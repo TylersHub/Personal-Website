@@ -21,6 +21,7 @@ const Contacts = () => {
         navLink4="/"
       />
       Contacts
+      <ContactForm formWidth="50%" textAlign="center" />
       <Footer
         fText1="Tyler Rosa +1-929-345-5228 18tyler.rosa1@gmail.com"
         fText2=" Tyler Rosa. All rights reserved."

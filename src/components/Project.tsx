@@ -6,9 +6,16 @@ interface Props {
   projDesc: string;
   projLink: string;
   projHeight: string;
+  projImage?: string;
 }
 
-const Project = ({ projTitle, projDesc, projLink, projHeight }: Props) => {
+const Project = ({
+  projTitle,
+  projDesc,
+  projLink,
+  projHeight,
+  projImage = "https://via.placeholder.com/800x400",
+}: Props) => {
   return (
     <div>
       <div
@@ -18,13 +25,10 @@ const Project = ({ projTitle, projDesc, projLink, projHeight }: Props) => {
         }}
       >
         <div className="project">
-          <Image
-            imgSrc="https://via.placeholder.com/800x400"
-            imgAlt="Project Image"
-            imgWidth="40%"
-          />
+          <Image imgSrc={projImage} imgAlt="Project Image" imgWidth="20%" />
           <h3 className="mt-3">{projTitle}</h3>
           <p>{projDesc}</p>
+          <a href={projLink}>{projLink}</a>
         </div>
       </div>
     </div>

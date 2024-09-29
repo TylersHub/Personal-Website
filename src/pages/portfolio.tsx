@@ -4,6 +4,7 @@ import HeroSection from "../components/HeroSection";
 import Project from "../components/Project";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
+import projImage1 from "../assets/BulkRenamer_Logo.png";
 
 const Portfolio: React.FC = () => {
   return (
@@ -28,21 +29,22 @@ const Portfolio: React.FC = () => {
       />
 
       <Project
-        projTitle="Project 1"
-        projDesc="Project Description"
-        projLink=""
+        projTitle="BulkRenamer"
+        projDesc="A Renaming Tool for Windows"
+        projLink="/Project1"
+        projHeight="6rem 0"
+        projImage={projImage1}
+      />
+      <Project
+        projTitle="Web Scraper"
+        projDesc="Coming Soon..."
+        projLink="/Project2"
         projHeight="6rem 0"
       />
       <Project
-        projTitle="Project 2"
-        projDesc="Project Description"
-        projLink=""
-        projHeight="6rem 0"
-      />
-      <Project
-        projTitle="Project 3"
-        projDesc="Project Description"
-        projLink=""
+        projTitle="N/A"
+        projDesc="Coming Soon..."
+        projLink="/Project3"
         projHeight="6rem 0"
       />
 
