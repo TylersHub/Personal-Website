@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "./Image";
+import Button from "./Button";
 
 interface Props {
   projTitle: string;
@@ -28,7 +29,7 @@ const Project = ({
           <Image imgSrc={projImage} imgAlt="Project Image" imgWidth="20%" />
           <h3 className="mt-3">{projTitle}</h3>
           <p>{projDesc}</p>
-          <a href={projLink}>{projLink}</a>
+          <Button btnText="Learn More" btnLink={projLink} />
         </div>
       </div>
     </div>

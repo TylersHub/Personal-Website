@@ -20,7 +20,6 @@ const HeroSection = ({ Hname, Hsubtext, heightPadding }: Props) => {
           <h1 className="display-4">{Hname}</h1>
           <Image imgSrc={meImage} imgAlt="Image of Me" imgWidth="30%" />
           <p className="lead">{Hsubtext}</p>
-          <Button btnText="See my work" btnLink="" />
         </div>
       </div>
     </div>
