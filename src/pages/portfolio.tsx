@@ -11,10 +11,15 @@ const Portfolio: React.FC = () => {
       <div style={{ maxWidth: "100%" }}>
         <Navbar
           navMainText="Tyler"
+          navMainLink=""
           navText1="Portfolio"
+          navLink1=""
           navText2="About"
+          navLink2=""
           navText3="Contact"
+          navLink3=""
           navText4="Other"
+          navLink4=""
         />
       </div>
 
