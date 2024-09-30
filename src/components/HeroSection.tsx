@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./Button";
 import Image from "./Image";
 import meImage from "../assets/me.jpg";
+import "../css/TextEffects.css";
 
 interface Props {
   Hname: string;
@@ -17,7 +18,11 @@ const HeroSection = ({ Hname, Hsubtext, heightPadding }: Props) => {
         style={{ padding: heightPadding }}
       >
         <div className="container-fluid">
-          <h1 className="display-4">{Hname}</h1>
+          <div className="typewriter">
+            <div>
+              <h1 className="display-4">{Hname}</h1>
+            </div>
+          </div>
           <Image imgSrc={meImage} imgAlt="Image of Me" imgWidth="30%" />
           <p className="lead">{Hsubtext}</p>
         </div>
