@@ -1,4 +1,6 @@
 import React from "react";
+import "../css/Colors.css";
+import "../css/Navbar.css";
 
 interface Props {
   navMainText: string;
@@ -26,42 +28,74 @@ const Navbar = ({
   navLink4,
 }: Props) => {
   return (
-    <div className="maxWidth: 100%">
+    <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid" style={{ padding: "0 13rem" }}>
-          <a className="navbar-brand" href={navMainLink}>
-            {navMainText}
-          </a>
+        <div className="container-fluid text-hover-container gray highlightTextIn">
           <button
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-              <a
-                className="nav-link active"
-                aria-current="page"
-                href={navLink1}
-              >
-                {navText1}
-              </a>
-              <a className="nav-link" href={navLink2}>
-                {navText2}
-              </a>
-              <a className="nav-link" href={navLink3}>
-                {navText3}
-              </a>
-              <a className="nav-link" href={navLink4}>
-                {navText4}
-              </a>
-            </div>
+          <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="">
+                <a
+                  className="fw-bold"
+                  aria-current="page"
+                  href={navMainLink}
+                  style={{ fontWeight: "bold" }}
+                  data-alt="Tyler"
+                >
+                  {navMainText}
+                </a>
+              </li>
+              <li className="">
+                <a
+                  className=""
+                  aria-current="page"
+                  href={navLink1}
+                  data-alt="Portfolio"
+                >
+                  {navText1}
+                </a>
+              </li>
+              <li className="">
+                <a
+                  className=""
+                  aria-current="page"
+                  href={navLink2}
+                  data-alt="About"
+                >
+                  {navText2}
+                </a>
+              </li>
+              <li className="">
+                <a
+                  className=""
+                  aria-current="page"
+                  href={navLink3}
+                  data-alt="Contact"
+                >
+                  {navText3}
+                </a>
+              </li>
+              <li className="">
+                <a
+                  className=""
+                  aria-current="page"
+                  href={navLink4}
+                  data-alt="Other"
+                >
+                  {navText4}
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>

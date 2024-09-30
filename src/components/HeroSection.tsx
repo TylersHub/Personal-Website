@@ -16,7 +16,7 @@ const HeroSection = ({ Hname, Hsubtext, heightPadding }: Props) => {
         className="jumbotron text-center bg-dark text-white"
         style={{ padding: heightPadding }}
       >
-        <div className="container">
+        <div className="container-fluid">
           <h1 className="display-4">{Hname}</h1>
           <Image imgSrc={meImage} imgAlt="Image of Me" imgWidth="30%" />
           <p className="lead">{Hsubtext}</p>

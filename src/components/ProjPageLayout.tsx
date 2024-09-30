@@ -13,7 +13,6 @@ interface Props {
 const ProjPageLayout = ({
   projLayTitle,
   projLayDesc,
-  projLayLink,
   projLayHeight,
   projLayImage = "https://via.placeholder.com/800x400",
 }: Props) => {
