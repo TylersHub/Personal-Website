@@ -1,3 +1,24 @@
+/* Main Color Combination */
+
+.main-dark { 
+	background: #1e232b; 
+}
+	
+.main-blue { 
+	background: #2d4059; 
+}
+
+.main-orange { 
+	background: #ff5722; 
+}
+
+.main-gray { 
+	background: #eeeeee; 
+}
+
+
+/* General Colors */
+
 .red
 {
     background: #f44336;

@@ -5,6 +5,7 @@ import Project from "../components/Project";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import projImage1 from "../assets/BulkRenamer_Logo.png";
+import "../css/Colors.css";
 
 const Portfolio: React.FC = () => {
   return (
@@ -34,23 +35,24 @@ const Portfolio: React.FC = () => {
         projLink="/Project1"
         projHeight="6rem 0"
         projImage={projImage1}
+        projBG="main-blue"
       />
       <Project
         projTitle="Web Scraper"
         projDesc="Coming Soon..."
         projLink="/Project2"
         projHeight="6rem 0"
+        projBG="main-orange"
       />
       <Project
         projTitle="N/A"
         projDesc="Coming Soon..."
         projLink="/Project3"
         projHeight="6rem 0"
+        projBG="main-blue"
       />
 
-      <div>
-        <ContactForm formWidth="50%" textAlign="center" />
-      </div>
+      <ContactForm formWidth="50%" textAlign="left" />
 
       <Footer
         fText1="Tyler Rosa +1-929-345-5228 18tyler.rosa1@gmail.com"

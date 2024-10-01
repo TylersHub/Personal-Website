@@ -32,7 +32,7 @@
     /* The cursor */
     border-right: 1px solid;
     /* steps = number of characters */
-    animation: typing 3s steps(22) forwards, blink 1s step-end infinite;
+    animation: typing 2s steps(22) forwards, blink 1s step-end infinite;
   }
   
   @keyframes typing {

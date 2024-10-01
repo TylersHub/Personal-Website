@@ -8,6 +8,7 @@ interface Props {
   projLink: string;
   projHeight: string;
   projImage?: string;
+  projBG: string;
 }
 
 const Project = ({
@@ -16,16 +17,17 @@ const Project = ({
   projLink,
   projHeight,
   projImage = "https://via.placeholder.com/800x400",
+  projBG,
 }: Props) => {
   return (
     <div>
       <div
-        className="row my-5"
+        className={projBG}
         style={{
           padding: projHeight,
         }}
       >
-        <div className="project">
+        <div className="clearfix">
           <Image imgSrc={projImage} imgAlt="Project Image" imgWidth="20%" />
           <h3 className="mt-3">{projTitle}</h3>
           <p>{projDesc}</p>

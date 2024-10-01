@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
 
-html, body
-{
-    margin: 0px;
-}
 
 header, footer
 {
@@ -21,16 +25,6 @@ header h1
     font-size: 40px;
     font-weight: lighter;
     margin-bottom: 5px;
-}
-
-header span
-{
-    color: #222;
-}
-
-footer span
-{
-  color: #AAA;
 }
 
 div.text-hover-container
