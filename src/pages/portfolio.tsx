@@ -22,35 +22,49 @@ const Portfolio: React.FC = () => {
         navText4="Other"
         navLink4="/"
       />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "stretch",
+          flex: 1,
+        }}
+      >
+        <HeroSection
+          Hname="Hi, I'm Tyler"
+          Hsubtext={`"He built something..."`}
+          Hsubtext2={"COMPUTER SCIENCE | New York City"}
+          heightPadding="8rem"
+          addTypewriter="typewriter"
+          pTopMargin="200px"
+        />
 
-      <HeroSection
-        Hname="Hi, I'm Tyler"
-        Hsubtext="A passionate developer"
-        heightPadding="6rem 0"
-      />
-
-      <Project
-        projTitle="BulkRenamer"
-        projDesc="A Renaming Tool for Windows"
-        projLink="/Project1"
-        projHeight="6rem 0"
-        projImage={projImage1}
-        projBG="main-blue"
-      />
-      <Project
-        projTitle="Web Scraper"
-        projDesc="Coming Soon..."
-        projLink="/Project2"
-        projHeight="6rem 0"
-        projBG="main-orange"
-      />
-      <Project
-        projTitle="N/A"
-        projDesc="Coming Soon..."
-        projLink="/Project3"
-        projHeight="6rem 0"
-        projBG="main-blue"
-      />
+        <Project
+          projTitle="BulkRenamer"
+          projDesc="A Renaming Tool for Windows"
+          projbtnLink="/Project1"
+          projbtnText="Learn More"
+          projHeight="8rem"
+          projImage={projImage1}
+          projBG="main-blue"
+        />
+        <Project
+          projTitle="Web Scraper"
+          projDesc="Coming Soon..."
+          projbtnLink="/Project2"
+          projbtnText="Learn More"
+          projHeight="8rem"
+          projBG="main-dark"
+        />
+        <Project
+          projTitle="N/A"
+          projDesc="Coming Soon..."
+          projbtnLink="/Project3"
+          projbtnText="Learn More"
+          projHeight="8rem"
+          projBG="main-blue"
+        />
+      </div>
 
       <ContactForm formWidth="50%" textAlign="left" />
 

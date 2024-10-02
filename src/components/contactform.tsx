@@ -17,7 +17,7 @@ const ContactForm = ({ formWidth, textAlign = "left" }: Props) => {
             Name
           </label>
           <input
-            className="form-control"
+            className="form-control main-gray"
             id="exampleFormControlInput1"
             placeholder="Name"
           />
@@ -28,7 +28,7 @@ const ContactForm = ({ formWidth, textAlign = "left" }: Props) => {
           </label>
           <input
             type="email"
-            className="form-control"
+            className="form-control main-gray"
             id="exampleFormControlInput1"
             placeholder="name@example.com"
           />
@@ -38,7 +38,7 @@ const ContactForm = ({ formWidth, textAlign = "left" }: Props) => {
             Message
           </label>
           <textarea
-            className="form-control"
+            className="form-control main-gray"
             id="exampleFormControlTextarea1"
             rows={3}
           ></textarea>

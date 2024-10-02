@@ -9,7 +9,10 @@ const Project1 = () => {
         projLayTitle="BulkRenamer"
         projLayDesc="A Renaming Tool for Windows"
         projLayHeight="50vh"
+        projLaybtnLink=""
+        projLaybtnText="Download"
         projLayImage={projImage1}
+        projLayBG="main-blue"
       />
     </div>
   );

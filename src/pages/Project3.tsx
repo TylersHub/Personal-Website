@@ -8,7 +8,10 @@ const Project3 = () => {
         projLayTitle="Project 3"
         projLayDesc="Coming Soon..."
         projLayHeight="50vh"
+        projLaybtnLink=""
+        projLaybtnText="Coming Soon..."
         projLayImage="https://via.placeholder.com/800x400"
+        projLayBG="main-blue"
       />
     </div>
   );

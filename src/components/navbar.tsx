@@ -29,7 +29,7 @@ const Navbar = ({
 }: Props) => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar sticky-top navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid text-hover-container gray highlightTextIn">
           <button
             className="navbar-toggler"

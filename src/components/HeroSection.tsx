@@ -3,37 +3,78 @@ import Button from "./Button";
 import Image from "./Image";
 import meImage from "../assets/me.jpg";
 import "../css/TextEffects.css";
+import "../css/cust-containers.css";
 
 interface Props {
   Hname: string;
   Hsubtext: string;
+  Hsubtext2?: string;
   heightPadding?: string;
+  addTypewriter?: string;
+  pTopMargin?: string;
 }
 
-const HeroSection = ({ Hname, Hsubtext, heightPadding }: Props) => {
+const HeroSection = ({
+  Hname,
+  Hsubtext,
+  Hsubtext2,
+  heightPadding,
+  addTypewriter,
+  pTopMargin,
+}: Props) => {
   return (
     <div>
       <div
-        className="jumbotron text-center main-dark text-white"
+        className="main-dark text-white cust-container"
         style={{
-          padding: heightPadding,
           display: "flex",
-          flexDirection: "row",
+          flexDirection: "row", // Stack the image and text side-by-side
+          justifyContent: "space-between", // Ensure proper spacing between the elements
+          alignItems: "center", // Align content vertically in the center
+          minHeight: "500px", // Set a minimum height for the hero section
+          width: "100%",
         }}
       >
-        <div className="container-fluid">
+        {/* Image Section */}
+        <div style={{ minWidth: "350px" }}>
           <Image
             imgSrc={meImage}
             imgAlt="Image of Me"
-            imgWidth="30%"
-            imgPos="float-start px-4"
+            imgWidth="70%"
+            imgClasses="img-fluid rounded-circle"
+            imgMargin=""
           />
-          <div className="typewriter">
+        </div>
+
+        {/* Text Container */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column", // Stack the h1 and p vertically
+            justifyContent: "flex-start", // Align text to the top of the container
+            flex: 1, // Let the text container take the remaining space
+          }}
+        >
+          {/* h1 with typewriter effect */}
+          <div className="typewriter" style={{ marginTop: "50px" }}>
             <div>
-              <h1 className="display-4">{Hname}</h1>
+              <h1 className="display-2">{Hname}</h1>
             </div>
-            <div className="typewriter">
-              <p className="lead pt-3">{Hsubtext}</p>
+          </div>
+          <div
+            className={addTypewriter}
+            style={{ marginTop: pTopMargin, width: "20vw" }}
+          >
+            <div>
+              <p className="lead">{Hsubtext}</p>
+            </div>
+          </div>
+          <div
+            className={addTypewriter}
+            style={{ marginTop: "50px", width: "20vw" }}
+          >
+            <div>
+              <p className="lead">{Hsubtext2}</p>
             </div>
           </div>
         </div>

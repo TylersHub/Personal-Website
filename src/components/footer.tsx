@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/TextEffects.css";
 
 interface Props {
   fText1: string;
@@ -8,9 +9,9 @@ interface Props {
 const Footer = ({ fText1, fText2 }: Props) => {
   return (
     <div>
-      <footer className="main-gray text-center py-4 mt-0">
-        <div className="container-fluid">
-          <p className="mb-0">{fText1}</p>
+      <footer className="sticky-bottom gray text-center py-4 mt-0">
+        <div className="">
+          <p className="">{fText1}</p>
           <p className="mb-0">
             &copy; {new Date().getFullYear()}
             {fText2}

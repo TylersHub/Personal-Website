@@ -13,36 +13,40 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
+
+
+.text-container {
+  display: flex;
+  flex-direction: column; /* Stacks h1 and p vertically inside the text container */
+}
+
+.text-heading {
+  margin: 0; /* Remove default margin if needed */
+}
+
+.text-paragraph {
+  margin: 0; /* Remove default margin if needed */
+}
+
 a {
   font-weight: 500;
-  color: #646cff;
   text-decoration: inherit;
 }
-a:hover {
+/*a:hover {
   color: #535bf2;
-}
+}*/
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover {
+  /*a:hover {
     color: #0a15ee;
-  }
+  }*/
   button {
     background-color: #f9f9f9;
   }

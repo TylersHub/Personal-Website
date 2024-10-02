@@ -7,14 +7,20 @@ interface Props {
   projLayTitle: string;
   projLayDesc: string;
   projLayHeight: string;
+  projLaybtnLink: string;
+  projLaybtnText: string;
   projLayImage?: string;
+  projLayBG: string;
 }
 
 const ProjPageLayout = ({
   projLayTitle,
   projLayDesc,
   projLayHeight,
+  projLaybtnLink,
+  projLaybtnText,
   projLayImage = "https://via.placeholder.com/800x400",
+  projLayBG,
 }: Props) => {
   return (
     <div>
@@ -33,9 +39,11 @@ const ProjPageLayout = ({
       <Project
         projTitle={projLayTitle}
         projDesc={projLayDesc}
-        projLink=""
         projHeight={projLayHeight}
+        projbtnLink={projLaybtnLink}
+        projbtnText={projLaybtnText}
         projImage={projLayImage}
+        projBG={projLayBG}
       />
       <Footer
         fText1="Tyler Rosa +1-929-345-5228 18tyler.rosa1@gmail.com"

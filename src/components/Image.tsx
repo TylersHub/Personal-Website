@@ -4,20 +4,22 @@ interface Props {
   imgSrc: string;
   imgAlt: string;
   imgWidth: string;
-  imgPos?: string;
+  imgClasses?: string;
+  imgMargin?: string;
 }
 
-const Image = ({ imgSrc, imgAlt, imgWidth, imgPos }: Props) => {
+const Image = ({ imgSrc, imgAlt, imgWidth, imgClasses, imgMargin }: Props) => {
   return (
     <div>
       <img
         src={imgSrc}
         alt={imgAlt}
-        className={`img-fluid ${imgPos}`}
+        className={imgClasses}
         style={{
           width: imgWidth,
           display: "block",
-          margin: "0 auto",
+          margin: imgMargin,
+          objectFit: "contain",
         }}
       />
     </div>
