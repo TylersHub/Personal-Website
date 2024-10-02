@@ -40,12 +40,12 @@ const Project = ({
           <Image
             imgSrc={projImage}
             imgAlt="Project Image"
-            imgWidth="70%"
+            imgWidth="90%"
             imgClasses=""
             imgMargin="0 auto"
           />
-          <h3 className="mt-3">{projTitle}</h3>
-          <p>{projDesc}</p>
+          <h2 className="mt-3 text-light">{projTitle}</h2>
+          <p className="fs-4 text-light">{projDesc}</p>
           <Button btnText={projbtnText} btnLink={projbtnLink} />
         </div>
       </div>
