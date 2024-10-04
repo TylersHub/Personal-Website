@@ -7,6 +7,10 @@ interface Props {
   projDesc: string;
   projbtnLink: string;
   projbtnText: string;
+  projbtnClass: string;
+  projbtn2Link?: string;
+  projbtn2Text?: string;
+  projbtn2Class?: string;
   projHeight?: string;
   projImage?: string;
   projBG: string;
@@ -17,6 +21,10 @@ const Project = ({
   projDesc,
   projbtnLink,
   projbtnText,
+  projbtnClass,
+  projbtn2Link,
+  projbtn2Text,
+  projbtn2Class,
   projHeight,
   projImage = "https://via.placeholder.com/800x400",
   projBG,
@@ -46,7 +54,16 @@ const Project = ({
           />
           <h2 className="mt-3 text-light">{projTitle}</h2>
           <p className="fs-4 text-light">{projDesc}</p>
-          <Button btnText={projbtnText} btnLink={projbtnLink} />
+          <Button
+            btnText={projbtnText}
+            btnLink={projbtnLink}
+            btnClass={projbtnClass}
+          />
+          <Button
+            btnText={projbtn2Text}
+            btnLink={projbtn2Link}
+            btnClass={projbtn2Class}
+          />
         </div>
       </div>
     </div>

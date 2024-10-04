@@ -27,8 +27,33 @@ const About = () => {
         heightPadding="6rem 0"
         pTopMargin="50px"
       />
+      <div
+        className="main-blue text-white"
+        style={{
+          padding: "4rem", // Set padding separately
+          minHeight: "300px", // Set a consistent minimum height for all project sections
+          maxHeight: "700px",
+          display: "flex", // Use Flexbox to center content
+          flexDirection: "column", // Stack content vertically
+          justifyContent: "center", // Center content vertically
+          alignItems: "center", // Center content horizontally
+          width: "100%",
+        }}
+      >
+        <h1 className="mt-0 mb-5" style={{ width: "30vw" }}>
+          Technical Skills
+        </h1>
+        <p style={{ width: "50vw" }}>
+          Languages: Python, Java, JavaScript, TypeScript, C++, SQL, HTML/CSS
+        </p>
+        <p style={{ width: "50vw" }}>
+          Libraries: React, NumPy, Beautiful Soup, SQLAlchemy, Boost, OpenGL,
+          GLFW, ImGui, GLM
+        </p>
+        <p style={{ width: "50vw" }}>Frameworks: Flask, Express.js, Selenium</p>
+      </div>
       <Footer
-        fText1="Tyler Rosa +1-929-345-5228 18tyler.rosa1@gmail.com"
+        fText1="+1-929-345-5228 18tyler.rosa1@gmail.com"
         fText2=" Tyler Rosa. All rights reserved."
       />
     </div>

@@ -44,6 +44,7 @@ const Portfolio: React.FC = () => {
           projDesc="A Renaming Tool for Windows"
           projbtnLink="/Project1"
           projbtnText="Learn More"
+          projbtnClass="button-hover-animation"
           projHeight="8rem"
           projImage={projImage1}
           projBG="main-blue"
@@ -53,6 +54,7 @@ const Portfolio: React.FC = () => {
           projDesc="Coming Soon..."
           projbtnLink="/Project2"
           projbtnText="Learn More"
+          projbtnClass="button-hover-animation"
           projHeight="8rem"
           projBG="main-dark"
         />
@@ -61,15 +63,18 @@ const Portfolio: React.FC = () => {
           projDesc="Coming Soon..."
           projbtnLink="/Project3"
           projbtnText="Learn More"
+          projbtnClass="button-hover-animation"
           projHeight="8rem"
           projBG="main-blue"
         />
       </div>
 
-      <ContactForm formWidth="50%" textAlign="left" />
-
+      <div className="main-dark py-5 text-white">
+        <h1 className="py-5">Interested? Let's work Together!</h1>
+        <ContactForm formWidth="50%" textAlign="left" />
+      </div>
       <Footer
-        fText1="Tyler Rosa +1-929-345-5228 18tyler.rosa1@gmail.com"
+        fText1="+1-929-345-5228 18tyler.rosa1@gmail.com"
         fText2=" Tyler Rosa. All rights reserved."
       />
     </div>

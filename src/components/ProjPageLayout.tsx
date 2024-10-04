@@ -9,6 +9,10 @@ interface Props {
   projLayHeight: string;
   projLaybtnLink: string;
   projLaybtnText: string;
+  projLaybtnClass: string;
+  projLaybtn2Link?: string;
+  projLaybtn2Text?: string;
+  projLaybtn2Class?: string;
   projLayImage?: string;
   projLayBG: string;
 }
@@ -19,6 +23,10 @@ const ProjPageLayout = ({
   projLayHeight,
   projLaybtnLink,
   projLaybtnText,
+  projLaybtnClass,
+  projLaybtn2Link,
+  projLaybtn2Text,
+  projLaybtn2Class,
   projLayImage = "https://via.placeholder.com/800x400",
   projLayBG,
 }: Props) => {
@@ -42,11 +50,15 @@ const ProjPageLayout = ({
         projHeight={projLayHeight}
         projbtnLink={projLaybtnLink}
         projbtnText={projLaybtnText}
+        projbtnClass={projLaybtnClass}
+        projbtn2Link={projLaybtn2Link}
+        projbtn2Text={projLaybtn2Text}
+        projbtn2Class={projLaybtn2Class}
         projImage={projLayImage}
         projBG={projLayBG}
       />
       <Footer
-        fText1="Tyler Rosa +1-929-345-5228 18tyler.rosa1@gmail.com"
+        fText1="+1-929-345-5228 18tyler.rosa1@gmail.com"
         fText2=" Tyler Rosa. All rights reserved."
       />
     </div>

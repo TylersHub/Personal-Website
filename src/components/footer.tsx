@@ -10,10 +10,10 @@ interface Props {
 const Footer = ({ fText1, fText2 }: Props) => {
   return (
     <div>
-      <footer className="sticky-bottom gray text-center py-4 mt-0">
+      <footer className="sticky-bottom main-gray text-center py-1 mt-0">
         <div className="">
-          <p className="fs-4">{fText1}</p>
-          <p className="fs-5 ">
+          <p className="fs-4 mb-0">{fText1}</p>
+          <p className="fs-6 mb-0">
             &copy; {new Date().getFullYear()}
             {fText2}
           </p>

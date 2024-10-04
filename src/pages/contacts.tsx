@@ -21,14 +21,19 @@ const Contacts = () => {
           navText4="Other"
           navLink4="/"
         />
-        <div className="typewriter h1-container" style={{ marginTop: "50px" }}>
+        <div
+          className="typewriter h1-container py-5"
+          style={{ marginTop: "52px" }}
+        >
           <div>
             <h1 className="display-2 text-white">Contact Me!</h1>
           </div>
         </div>
-        <ContactForm formWidth="50%" textAlign="center" style={{}} />
+        <div className="py-5 mb-5">
+          <ContactForm formWidth="50%" textAlign="center" style={{}} />
+        </div>
         <Footer
-          fText1="Tyler Rosa +1-929-345-5228 18tyler.rosa1@gmail.com"
+          fText1="+1-929-345-5228 18tyler.rosa1@gmail.com"
           fText2=" Tyler Rosa. All rights reserved."
         />
       </div>

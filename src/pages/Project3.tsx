@@ -10,6 +10,7 @@ const Project3 = () => {
         projLayHeight="50vh"
         projLaybtnLink=""
         projLaybtnText="Coming Soon..."
+        projLaybtnClass="button-hover-animation"
         projLayImage="https://via.placeholder.com/800x400"
         projLayBG="main-blue"
       />

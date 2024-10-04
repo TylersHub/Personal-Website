@@ -43,6 +43,9 @@ const ContactForm = ({ formWidth, textAlign = "left" }: Props) => {
             rows={3}
           ></textarea>
         </div>
+        <button className="button-hover-animation mt-3" type="submit">
+          Submit
+        </button>
       </div>
     </div>
   );

@@ -30,7 +30,7 @@ const Navbar = ({
   return (
     <div>
       <nav className="navbar sticky-top navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid text-hover-container gray highlightTextIn">
+        <div className="container-fluid text-hover-container main-gray highlightTextIn">
           <button
             className="navbar-toggler"
             type="button"
