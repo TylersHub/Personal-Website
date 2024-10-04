@@ -17,8 +17,8 @@ const About = () => {
         navLink2="/about"
         navText3="Contact"
         navLink3="/contacts"
-        navText4="Other"
-        navLink4="/"
+        navText4="Services"
+        navLink4="/Services"
       />
 
       <HeroSection

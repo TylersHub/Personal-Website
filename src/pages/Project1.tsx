@@ -7,8 +7,9 @@ const Project1 = () => {
     <div>
       <ProjPageLayout
         projLayTitle="BulkRenamer"
-        projLayDesc="A Renaming Tool for Windows"
-        projLayHeight="50vh"
+        projLayDesc="A Windows tool made in C++ with libraries such as OpenGL, GLFW, ImGui, GLM, and Boost in Visual
+Studio that renames multiple files simultaneously. Offers different renaming options for flexibility, designed as a user-friendly GUI using OpenGL to provide an intuitive context window."
+        projLayHeight="60vh"
         projLaybtnLink="https://github.com/TylersHub/BulkRenamer/releases/download/v2.2.2/BulkRenamer_Release_x64.exe"
         projLaybtnText="Download"
         projLaybtnClass="button-hover-animation"
@@ -16,6 +17,7 @@ const Project1 = () => {
         projLaybtn2Text="GitHub"
         projLaybtn2Class="button-hover-animation"
         projLayImage={projImage1}
+        projLayImageWidth="55%"
         projLayBG="main-blue"
       />
     </div>

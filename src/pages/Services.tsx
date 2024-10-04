@@ -1,11 +1,11 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
-import Project from "../components/Project";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
+import "../css/Colors.css";
 
-const Contacts = () => {
+const Services = () => {
   return (
     <div>
       <div className="main-dark" style={{ height: "8rem 0" }}>
@@ -22,12 +22,13 @@ const Contacts = () => {
           navLink4="/Services"
         />
         <div
-          className="typewriter h1-container py-5"
-          style={{ marginTop: "52px" }}
+          className="h1-container py-5 text-center mx-auto"
+          style={{ marginTop: "52px", maxWidth: "600px" }}
         >
-          <div>
-            <h1 className="display-2 text-white">Contact Me!</h1>
-          </div>
+          <h1 className="display-2 text-white fs-1 ">
+            Interested in a website like this? Or perhaps your own software
+            application? Contact me, and let's work together!
+          </h1>
         </div>
         <div className="py-5 mb-5">
           <ContactForm formWidth="50%" textAlign="center" style={{}} />
@@ -41,4 +42,4 @@ const Contacts = () => {
   );
 };
 
-export default Contacts;
+export default Services;

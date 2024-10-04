@@ -14,6 +14,7 @@ interface Props {
   projLaybtn2Text?: string;
   projLaybtn2Class?: string;
   projLayImage?: string;
+  projLayImageWidth?: string;
   projLayBG: string;
 }
 
@@ -28,6 +29,7 @@ const ProjPageLayout = ({
   projLaybtn2Text,
   projLaybtn2Class,
   projLayImage = "https://via.placeholder.com/800x400",
+  projLayImageWidth,
   projLayBG,
 }: Props) => {
   return (
@@ -41,8 +43,8 @@ const ProjPageLayout = ({
         navLink2="/about"
         navText3="Contact"
         navLink3="/contacts"
-        navText4="Other"
-        navLink4="/"
+        navText4="Services"
+        navLink4="/Services"
       />
       <Project
         projTitle={projLayTitle}
@@ -55,6 +57,7 @@ const ProjPageLayout = ({
         projbtn2Text={projLaybtn2Text}
         projbtn2Class={projLaybtn2Class}
         projImage={projLayImage}
+        projImageWidth={projLayImageWidth}
         projBG={projLayBG}
       />
       <Footer

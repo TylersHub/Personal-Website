@@ -19,7 +19,7 @@ const Footer = ({ fText1, fText2 }: Props) => {
           </p>
 
           <div className="social icon-hover">
-            <a href="https://www.linkedin.com/in/tyler-rosa/" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/tylerrosa/" title="LinkedIn">
               <i className="bi bi-linkedin"></i>
             </a>
             <a href="https://github.com/TylersHub" title="Github">

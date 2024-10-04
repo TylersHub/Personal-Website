@@ -21,7 +21,7 @@ h1 {
   font-size: 4rem;
   margin-inline: auto;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 

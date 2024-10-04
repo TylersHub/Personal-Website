@@ -13,6 +13,7 @@ interface Props {
   projbtn2Class?: string;
   projHeight?: string;
   projImage?: string;
+  projImageWidth?: string;
   projBG: string;
 }
 
@@ -27,6 +28,7 @@ const Project = ({
   projbtn2Class,
   projHeight,
   projImage = "https://via.placeholder.com/800x400",
+  projImageWidth = "90%",
   projBG,
 }: Props) => {
   return (
@@ -48,7 +50,7 @@ const Project = ({
           <Image
             imgSrc={projImage}
             imgAlt="Project Image"
-            imgWidth="90%"
+            imgWidth={projImageWidth}
             imgClasses=""
             imgMargin="0 auto"
           />

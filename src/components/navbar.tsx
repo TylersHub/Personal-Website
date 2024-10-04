@@ -90,7 +90,7 @@ const Navbar = ({
                   className=""
                   aria-current="page"
                   href={navLink4}
-                  data-alt="Other"
+                  data-alt="Services"
                 >
                   {navText4}
                 </a>

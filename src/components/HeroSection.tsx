@@ -31,7 +31,7 @@ const HeroSection = ({
           flexDirection: "row", // Stack the image and text side-by-side
           justifyContent: "space-between", // Ensure proper spacing between the elements
           alignItems: "center", // Align content vertically in the center
-          minHeight: "500px", // Set a minimum height for the hero section
+          height: "800px", // Set a minimum height for the hero section
           width: "100%",
         }}
       >

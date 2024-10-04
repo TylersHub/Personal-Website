@@ -16,11 +16,11 @@ const Portfolio: React.FC = () => {
         navText1="Portfolio"
         navLink1="/"
         navText2="About"
-        navLink2="/about"
+        navLink2="/About"
         navText3="Contact"
-        navLink3="/contacts"
-        navText4="Other"
-        navLink4="/"
+        navLink3="/Contacts"
+        navText4="Services"
+        navLink4="/Services"
       />
       <div
         style={{
@@ -41,7 +41,7 @@ const Portfolio: React.FC = () => {
 
         <Project
           projTitle="BulkRenamer"
-          projDesc="A Renaming Tool for Windows"
+          projDesc="A Handy Tool for Windows"
           projbtnLink="/Project1"
           projbtnText="Learn More"
           projbtnClass="button-hover-animation"
