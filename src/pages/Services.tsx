@@ -22,7 +22,7 @@ const Services = () => {
           navLink4="/Services"
         />
         <div
-          className="h1-container py-5 text-center mx-auto"
+          className="h1-container py-4 text-center mx-auto"
           style={{ marginTop: "52px", maxWidth: "600px" }}
         >
           <h1 className="display-2 text-white fs-1 ">
@@ -31,7 +31,7 @@ const Services = () => {
           </h1>
         </div>
         <div className="py-5 mb-5">
-          <ContactForm formWidth="50%" textAlign="center" style={{}} />
+          <ContactForm formWidth="50%" textAlign="center" />
         </div>
         <Footer
           fText1="+1-929-345-5228 18tyler.rosa1@gmail.com"

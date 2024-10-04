@@ -30,7 +30,7 @@ const Contacts = () => {
           </div>
         </div>
         <div className="py-5 mb-5">
-          <ContactForm formWidth="50%" textAlign="center" style={{}} />
+          <ContactForm formWidth="50%" textAlign="center" />
         </div>
         <Footer
           fText1="+1-929-345-5228 18tyler.rosa1@gmail.com"
