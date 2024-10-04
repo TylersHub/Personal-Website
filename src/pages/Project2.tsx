@@ -1,4 +1,3 @@
-import React from "react";
 import ProjPageLayout from "../components/ProjPageLayout";
 
 const Project2 = () => {
@@ -8,10 +7,10 @@ const Project2 = () => {
         projLayTitle="Project 2"
         projLayDesc="Coming Soon..."
         projLayHeight="50vh"
-        projLaybtnLink=""
+        projLaybtnLink="/"
         projLaybtnText="Coming Soon..."
         projLaybtnClass="button-hover-animation"
-        projLayImage="https://via.placeholder.com/800x400"
+        projLayImage=""
         projLayBG="main-blue"
       />
     </div>

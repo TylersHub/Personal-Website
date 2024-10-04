@@ -1,5 +1,3 @@
-import React from "react";
-import Button from "./Button";
 import Image from "./Image";
 import meImage from "../assets/me.jpg";
 import "../css/TextEffects.css";
@@ -18,7 +16,6 @@ const HeroSection = ({
   Hname,
   Hsubtext,
   Hsubtext2,
-  heightPadding,
   addTypewriter,
   pTopMargin,
 }: Props) => {
@@ -31,7 +28,7 @@ const HeroSection = ({
           flexDirection: "row", // Stack the image and text side-by-side
           justifyContent: "space-between", // Ensure proper spacing between the elements
           alignItems: "center", // Align content vertically in the center
-          height: "800px", // Set a minimum height for the hero section
+          height: "80vh", // Set a minimum height for the hero section
           width: "100%",
         }}
       >
@@ -56,7 +53,7 @@ const HeroSection = ({
           }}
         >
           {/* h1 with typewriter effect */}
-          <div className="typewriter" style={{ marginTop: "50px" }}>
+          <div className="typewriter" style={{ marginTop: "5vh" }}>
             <div>
               <h1 className="display-2">{Hname}</h1>
             </div>
@@ -71,7 +68,7 @@ const HeroSection = ({
           </div>
           <div
             className={addTypewriter}
-            style={{ marginTop: "50px", width: "20vw" }}
+            style={{ marginTop: "5vh", width: "20vw" }}
           >
             <div>
               <p className="lead">{Hsubtext2}</p>

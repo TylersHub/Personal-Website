@@ -1,4 +1,3 @@
-import React from "react";
 import "../css/Colors.css";
 import "../css/Navbar.css";
 
@@ -28,21 +27,24 @@ const Navbar = ({
   navLink4,
 }: Props) => {
   return (
-    <div>
+    <div className="">
       <nav className="navbar sticky-top navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid text-hover-container main-gray highlightTextIn">
+        <div className="container-fluid text-hover-container main-blue highlightTextIn">
           <button
-            className="navbar-toggler"
+            className="navbar-toggler button-hover-animation"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01"
+            data-bs-target="#navbarToggler"
+            aria-controls="navbarToggler"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <div
+            className="collapse navbar-collapse text-white"
+            id="navbarToggler"
+          >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="">
                 <a
@@ -80,7 +82,7 @@ const Navbar = ({
                   className=""
                   aria-current="page"
                   href={navLink3}
-                  data-alt="Contact"
+                  data-alt="Services"
                 >
                   {navText3}
                 </a>
@@ -90,7 +92,7 @@ const Navbar = ({
                   className=""
                   aria-current="page"
                   href={navLink4}
-                  data-alt="Services"
+                  data-alt="Contact"
                 >
                   {navText4}
                 </a>

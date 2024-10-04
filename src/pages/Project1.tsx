@@ -1,4 +1,3 @@
-import React from "react";
 import ProjPageLayout from "../components/ProjPageLayout";
 import projImage1 from "../assets/BulkRenamer_Logo.png";
 

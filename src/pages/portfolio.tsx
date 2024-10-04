@@ -17,10 +17,10 @@ const Portfolio: React.FC = () => {
         navLink1="/"
         navText2="About"
         navLink2="/About"
-        navText3="Contact"
-        navLink3="/Contacts"
-        navText4="Services"
-        navLink4="/Services"
+        navText3="Services"
+        navLink3="/Services"
+        navText4="Contact"
+        navLink4="/Contacts"
       />
       <div
         style={{
@@ -36,7 +36,7 @@ const Portfolio: React.FC = () => {
           Hsubtext2={"COMPUTER SCIENCE | New York City"}
           heightPadding="8rem"
           addTypewriter="typewriter"
-          pTopMargin="200px"
+          pTopMargin="21vh"
         />
 
         <Project
@@ -60,7 +60,7 @@ const Portfolio: React.FC = () => {
         />
         <Project
           projTitle="N/A"
-          projDesc="Coming Soon..."
+          projDesc="Coming Later..."
           projbtnLink="/Project3"
           projbtnText="Learn More"
           projbtnClass="button-hover-animation"
@@ -70,12 +70,13 @@ const Portfolio: React.FC = () => {
       </div>
 
       <div className="main-dark py-5 text-white">
-        <h1 className="py-5">Interested? Let's work Together!</h1>
+        <h1 className="py-5">Interested? Let's connect</h1>
         <ContactForm formWidth="50%" textAlign="left" />
       </div>
       <Footer
-        fText1="+1-929-345-5228 18tyler.rosa1@gmail.com"
-        fText2=" Tyler Rosa. All rights reserved."
+        fText1="+1-929-345-5228"
+        fText2="18tyler.rosa1@gmail.com"
+        fText3=" Tyler Rosa. All rights reserved."
       />
     </div>
   );

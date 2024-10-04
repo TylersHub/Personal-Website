@@ -14,9 +14,6 @@
 }
 
 
-
-
-
 .text-container {
   display: flex;
   flex-direction: column; /* Stacks h1 and p vertically inside the text container */
@@ -38,16 +35,3 @@ a {
   color: #535bf2;
 }*/
 
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  /*a:hover {
-    color: #0a15ee;
-  }*/
-  button {
-    background-color: #f9f9f9;
-  }
-}

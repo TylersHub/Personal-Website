@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "./Image";
 import Button from "./Button";
 
@@ -27,7 +26,7 @@ const Project = ({
   projbtn2Text,
   projbtn2Class,
   projHeight,
-  projImage = "https://via.placeholder.com/800x400",
+  projImage = "https://via.placeholder.com/300x200.png/000000/ffffff?text=%3F",
   projImageWidth = "90%",
   projBG,
 }: Props) => {
