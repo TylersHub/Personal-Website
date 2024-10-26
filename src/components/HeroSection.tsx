@@ -23,7 +23,7 @@ const HeroSection = ({
     <div className="main-dark text-white container-fluid">
       <div className="row align-items-center">
         {/* Image column */}
-        <div className="col-md-6 d-flex justify-content-end p-5">
+        <div className="col-12 col-md d-flex justify-content-center justify-md-content-end p-5">
           <Image
             imgSrc={meImage}
             imgAlt="Image of Me"
@@ -34,22 +34,22 @@ const HeroSection = ({
         </div>
 
         {/* Text column */}
-        <div className="col me-5 pe-5">
-          <div className="row pb-5">
+        <div className="col-12 col-md me-md-5 pe-md-5">
+          <div className="row pb-md-5">
             <div className="typewriter">
               <div>
                 <h1 className="display-2">{Hname}</h1>
               </div>
             </div>
           </div>
-          <div className="row pt-5">
+          <div className="row pt-md-5">
             <div className={`text-center ${addTypewriter}`}>
               <div>
                 <p className="lead">{Hsubtext}</p>
               </div>
             </div>
           </div>
-          <div className="row pt-4">
+          <div className="row pt-md-4">
             <div className={`text-center ${addTypewriter}`}>
               <div>
                 <p className="lead">{Hsubtext2}</p>
