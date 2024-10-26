@@ -20,58 +20,40 @@ const HeroSection = ({
   pTopMargin,
 }: Props) => {
   return (
-    <div>
-      <div
-        className="main-dark text-white cust-container"
-        style={{
-          display: "flex",
-          flexDirection: "row", // Stack the image and text side-by-side
-          justifyContent: "space-between", // Ensure proper spacing between the elements
-          alignItems: "center", // Align content vertically in the center
-          height: "80vh", // Set a minimum height for the hero section
-          width: "100%",
-        }}
-      >
-        {/* Image Section */}
-        <div style={{ minWidth: "350px" }}>
+    <div className="main-dark text-white container-fluid">
+      <div className="row align-items-center">
+        {/* Image column */}
+        <div className="col-md-6 d-flex justify-content-end p-5">
           <Image
             imgSrc={meImage}
             imgAlt="Image of Me"
             imgWidth="70%"
-            imgClasses="img-fluid rounded-circle"
+            imgClasses="rounded-circle"
             imgMargin=""
           />
         </div>
 
-        {/* Text Container */}
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column", // Stack the h1 and p vertically
-            justifyContent: "flex-start", // Align text to the top of the container
-            flex: 1, // Let the text container take the remaining space
-          }}
-        >
-          {/* h1 with typewriter effect */}
-          <div className="typewriter" style={{ marginTop: "5vh" }}>
-            <div>
-              <h1 className="display-2">{Hname}</h1>
+        {/* Text column */}
+        <div className="col me-5 pe-5">
+          <div className="row pb-5">
+            <div className="typewriter">
+              <div>
+                <h1 className="display-2">{Hname}</h1>
+              </div>
             </div>
           </div>
-          <div
-            className={addTypewriter}
-            style={{ marginTop: pTopMargin, width: "20vw" }}
-          >
-            <div>
-              <p className="lead">{Hsubtext}</p>
+          <div className="row pt-5">
+            <div className={`text-center ${addTypewriter}`}>
+              <div>
+                <p className="lead">{Hsubtext}</p>
+              </div>
             </div>
           </div>
-          <div
-            className={addTypewriter}
-            style={{ marginTop: "5vh", width: "20vw" }}
-          >
-            <div>
-              <p className="lead">{Hsubtext2}</p>
+          <div className="row pt-4">
+            <div className={`text-center ${addTypewriter}`}>
+              <div>
+                <p className="lead">{Hsubtext2}</p>
+              </div>
             </div>
           </div>
         </div>

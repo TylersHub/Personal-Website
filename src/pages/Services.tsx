@@ -22,10 +22,10 @@ const Services = () => {
           navLink4="/Contacts"
         />
         <div
-          className="h1-container text-center mb-3 mx-auto"
+          className="container-fluid text-center mb-3 mx-auto"
           style={{ marginTop: "5vh", maxWidth: "600px", padding: "3vh 0" }}
         >
-          <h1 className="display-2 text-white fs-1 ">
+          <h1 className="display-6 text-white">
             Interested in having your own website? Or even your own software
             application? Contact me, and let's work together!
           </h1>

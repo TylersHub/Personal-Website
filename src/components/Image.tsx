@@ -8,19 +8,17 @@ interface Props {
 
 const Image = ({ imgSrc, imgAlt, imgWidth, imgClasses, imgMargin }: Props) => {
   return (
-    <div>
-      <img
-        src={imgSrc}
-        alt={imgAlt}
-        className={imgClasses}
-        style={{
-          width: imgWidth,
-          display: "block",
-          margin: imgMargin,
-          objectFit: "contain",
-        }}
-      />
-    </div>
+    <img
+      src={imgSrc}
+      alt={imgAlt}
+      className={imgClasses}
+      style={{
+        width: imgWidth,
+        display: "block",
+        margin: imgMargin,
+        objectFit: "cover",
+      }}
+    />
   );
 };
 
