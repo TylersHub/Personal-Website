@@ -12,18 +12,18 @@ const Footer = ({ fText1, fText2, fText3 }: Props) => {
     <footer className="main-blue py-3 text-white">
       <div className="container-fluid">
         <div className="row align-items-center">
-          <div className="col-md-3 text-center text-md-start mb-2 mb-md-0">
+          <div className="col-md-3 text-md-start mb-2 mb-md-0">
             <p className="fs-4 mb-0">{fText1}</p>
           </div>
-          <div className="col-md-3 text-center mb-2 mb-md-0">
+          <div className="col-md-4 mb-2 mb-md-0">
             <p className="fs-4 mb-0">{fText2}</p>
           </div>
-          <div className="col-md-3 text-center mb-2 mb-md-0">
+          <div className="col-md-2 mb-2 mb-md-0">
             <p className="fs-6 mb-0">
               &copy; {new Date().getFullYear()} {fText3}
             </p>
           </div>
-          <div className="col-md-3 text-center text-md-end">
+          <div className="col-md-3">
             <div className="social icon-hover">
               <a href="https://www.linkedin.com/in/tylerrosa/" title="LinkedIn">
                 <i className="bi bi-linkedin"></i>

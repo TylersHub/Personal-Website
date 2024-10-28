@@ -27,9 +27,9 @@ const Navbar = ({
   navLink4,
 }: Props) => {
   return (
-    <div className="">
-      <nav className="navbar sticky-top navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid text-hover-container main-blue highlightTextIn">
+    <div>
+      <nav className="navbar navbar-expand-md bg-body-tertiary">
+        <div className="container-fluid text-hover-container main-blue highlightTextIn d-flex justify-content-center justify-content-sm-start">
           <button
             className="navbar-toggler button-hover-animation"
             type="button"

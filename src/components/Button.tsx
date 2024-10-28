@@ -8,7 +8,7 @@ interface Props {
 
 const Button = ({ btnText, btnLink, btnClass }: Props) => {
   return (
-    <div>
+    <div className="d-flex justify-content-center">
       <a href={btnLink} className={btnClass} role="button">
         {btnText}
       </a>

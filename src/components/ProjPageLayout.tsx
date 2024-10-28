@@ -20,7 +20,6 @@ interface Props {
 const ProjPageLayout = ({
   projLayTitle,
   projLayDesc,
-  projLayHeight,
   projLaybtnLink,
   projLaybtnText,
   projLaybtnClass,
@@ -28,7 +27,6 @@ const ProjPageLayout = ({
   projLaybtn2Text,
   projLaybtn2Class,
   projLayImage = "https://via.placeholder.com/300x200.png/000000/ffffff?text=%3F",
-  projLayImageWidth,
   projLayBG,
 }: Props) => {
   return (
@@ -48,7 +46,6 @@ const ProjPageLayout = ({
       <Project
         projTitle={projLayTitle}
         projDesc={projLayDesc}
-        projHeight={projLayHeight}
         projbtnLink={projLaybtnLink}
         projbtnText={projLaybtnText}
         projbtnClass={projLaybtnClass}
@@ -56,7 +53,6 @@ const ProjPageLayout = ({
         projbtn2Text={projLaybtn2Text}
         projbtn2Class={projLaybtn2Class}
         projImage={projLayImage}
-        projImageWidth={projLayImageWidth}
         projBG={projLayBG}
       />
       <Footer

@@ -1,7 +1,7 @@
 interface Props {
   imgSrc: string;
   imgAlt: string;
-  imgWidth: string;
+  imgWidth?: string;
   imgClasses?: string;
   imgMargin?: string;
 }

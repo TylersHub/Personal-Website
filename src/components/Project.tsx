@@ -10,9 +10,7 @@ interface Props {
   projbtn2Link?: string;
   projbtn2Text?: string;
   projbtn2Class?: string;
-  projHeight?: string;
   projImage?: string;
-  projImageWidth?: string;
   projBG: string;
 }
 
@@ -25,41 +23,47 @@ const Project = ({
   projbtn2Link,
   projbtn2Text,
   projbtn2Class,
-  projHeight,
   projImage = "https://via.placeholder.com/300x200.png/000000/ffffff?text=%3F",
-  projImageWidth = "90%",
   projBG,
 }: Props) => {
   return (
-    <div>
-      <div
-        className={projBG}
-        style={{
-          padding: projHeight, // Set padding separately
-          minHeight: "300px", // Set a consistent minimum height for all project sections
-          maxHeight: "600px",
-          display: "flex", // Use Flexbox to center content
-          flexDirection: "column", // Stack content vertically
-          justifyContent: "center", // Center content vertically
-          alignItems: "center", // Center content horizontally
-          width: "100%",
-        }}
-      >
-        <div className="clearfix">
+    <div className={`${projBG} text-white container-fluid py-5`}>
+      {/* Image Row */}
+      <div className="row align-items-center">
+        <div className="col-12 d-flex justify-content-center">
           <Image
             imgSrc={projImage}
             imgAlt="Project Image"
-            imgWidth={projImageWidth}
+            imgWidth="30%"
             imgClasses=""
-            imgMargin="0 auto"
           />
-          <h2 className="mt-3 text-light">{projTitle}</h2>
-          <p className="fs-4 text-light">{projDesc}</p>
+        </div>
+      </div>
+      {/* Text Row */}
+      <div className="row ">
+        <div className="col-12 d-flex justify-content-center">
+          <h2 className="mt-3 fw-bold">{projTitle}</h2>
+        </div>
+      </div>
+      {/* Text Row 2 */}
+      <div className="row ">
+        <div className="col-12 d-flex justify-content-center">
+          <p className="fs-4">{projDesc}</p>
+        </div>
+      </div>
+      {/* Button Row */}
+      <div className="row">
+        <div className="col-12 ">
           <Button
             btnText={projbtnText}
             btnLink={projbtnLink}
             btnClass={projbtnClass}
           />
+        </div>
+      </div>
+      {/* Button Row (off by default)*/}
+      <div className="row pt-2">
+        <div className="col-12 ">
           <Button
             btnText={projbtn2Text}
             btnLink={projbtn2Link}

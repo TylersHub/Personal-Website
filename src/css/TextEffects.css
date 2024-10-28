@@ -12,16 +12,22 @@ p {
   font-family: monospace;
   font-size: 2rem;
   margin-inline: auto;
-  overflow: hidden;
   white-space: normal;
+
 }
 
 h1 {
   font-family: monospace;
   font-size: 4rem;
   margin-inline: auto;
-  overflow: hidden;
   white-space: normal;
+}
+
+h2 {
+  font-family: monospace;
+  font-family: monospace;
+  margin-inline: auto;
+  white-space: nowrap;
 }
 
 /* TypeWriter Effect */

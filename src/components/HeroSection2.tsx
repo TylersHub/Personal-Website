@@ -1,86 +1,49 @@
 import Image from "./Image";
 import "../css/TextEffects.css";
-import "../css/cust-containers.css";
-import meImage from "../assets/me.jpg";
+import meImage from "../assets/me.png";
 
 interface Props {
   Hname: string;
   Hsubtext: string;
   Hsubtext2?: string;
   addTypewriter?: string;
-  pTopMargin?: string;
 }
 
-const HeroSection2 = ({
-  Hname,
-  Hsubtext,
-  Hsubtext2,
-  addTypewriter,
-  pTopMargin,
-}: Props) => {
+const HeroSection2 = ({ Hname, Hsubtext, Hsubtext2, addTypewriter }: Props) => {
   return (
-    <div>
-      <div
-        className="main-dark text-white cust-container shadow"
-        style={{
-          display: "flex",
-          flexDirection: "row", // Stack the image and text side-by-side
-          justifyContent: "space-between", // Ensure proper spacing between the elements
-          alignItems: "center", // Align content vertically in the center
-          height: "80vh", // Set a minimum height for the hero section
-          width: "100%",
-        }}
-      >
-        {/* Left Section (Subtext) */}
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-            justifyContent: "center",
-            flex: 1,
-          }}
-        >
-          {/* Subtext */}
-          <div
-            className={addTypewriter}
-            style={{ marginTop: pTopMargin, width: "24vw" }}
-          >
-            <p className="lead fs-3">{Hsubtext}</p>
+    <div className="main-dark text-white container-fluid">
+      <div className="row align-items-center">
+        {/* Left Column */}
+        <div className="col-12 col-md d-flex justify-content-center justify-content-md-end p-5">
+          <div className={`${addTypewriter} ps-md-5`}>
+            <p className="lead px-md-5 fs-2">{Hsubtext}</p>
           </div>
 
-          {/* Subtext2 */}
-          <div className={addTypewriter} style={{ marginTop: "", width: "" }}>
+          <div className={addTypewriter}>
             <p className="lead">{Hsubtext2}</p>
           </div>
         </div>
 
-        {/* Right Section (h1 and Image) */}
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column", // Stack h1 on top of the image
-            alignItems: "flex-end", // Left-align items within this container
-            justifyContent: "right", // Center content vertically
-            flex: 1,
-
-            paddingRight: "50px", // Padding to give space from the edge
-          }}
-        >
-          {/* h1 with typewriter effect */}
-          <div className="typewriter mb-4 me-5">
-            <h1>{Hname}</h1>
+        {/* Right Column */}
+        <div className="col-12 col-md  pe-md-5">
+          <div className="row">
+            <div className="col-12 typewriter mt-4">
+              <div>
+                <h1 className="fw-bold">{Hname}</h1>
+              </div>
+            </div>
           </div>
 
-          {/* Image */}
-          <div className="mt-1" style={{ paddingLeft: "200px" }}>
-            <Image
-              imgSrc={meImage}
-              imgAlt="Image of Me"
-              imgWidth="100%"
-              imgClasses="img-fluid rounded-circle"
-              imgMargin=""
-            />
+          <div className="row my-5 ">
+            <div className="col-12 d-flex justify-content-center">
+              <Image
+                imgSrc={meImage}
+                imgAlt="Image of Me"
+                imgWidth="70%"
+                imgClasses="rounded-circle"
+                imgMargin=""
+              />
+            </div>
           </div>
         </div>
       </div>

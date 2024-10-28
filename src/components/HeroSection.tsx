@@ -1,7 +1,6 @@
 import Image from "./Image";
-import meImage from "../assets/me.jpg";
+import meImage from "../assets/me.png";
 import "../css/TextEffects.css";
-import "../css/cust-containers.css";
 
 interface Props {
   Hname: string;
@@ -9,21 +8,14 @@ interface Props {
   Hsubtext2?: string;
   heightPadding?: string;
   addTypewriter?: string;
-  pTopMargin?: string;
 }
 
-const HeroSection = ({
-  Hname,
-  Hsubtext,
-  Hsubtext2,
-  addTypewriter,
-  pTopMargin,
-}: Props) => {
+const HeroSection = ({ Hname, Hsubtext, Hsubtext2, addTypewriter }: Props) => {
   return (
     <div className="main-dark text-white container-fluid">
       <div className="row align-items-center">
-        {/* Image column */}
-        <div className="col-12 col-md d-flex justify-content-center justify-md-content-end p-5">
+        {/* Left column */}
+        <div className="col-12 col-md d-flex justify-content-center justify-content-md-end p-5">
           <Image
             imgSrc={meImage}
             imgAlt="Image of Me"
@@ -33,12 +25,12 @@ const HeroSection = ({
           />
         </div>
 
-        {/* Text column */}
+        {/* Right column */}
         <div className="col-12 col-md me-md-5 pe-md-5">
           <div className="row pb-md-5">
             <div className="typewriter">
               <div>
-                <h1 className="display-2">{Hname}</h1>
+                <h1 className="display-2 fw-bold">{Hname}</h1>
               </div>
             </div>
           </div>

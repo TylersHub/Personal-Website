@@ -22,55 +22,43 @@ const Portfolio: React.FC = () => {
         navText4="Contact"
         navLink4="/Contacts"
       />
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "stretch",
-          flex: 1,
-        }}
-      >
-        <HeroSection
-          Hname="Hi, I'm Tyler"
-          Hsubtext={`"He built something..."`}
-          Hsubtext2={"COMPUTER SCIENCE | New York City"}
-          heightPadding="8rem"
-          addTypewriter="typewriter"
-          pTopMargin="21vh"
-        />
+      <HeroSection
+        Hname="Hi, I'm Tyler"
+        Hsubtext={`"He built something..."`}
+        Hsubtext2={"COMPUTER SCIENCE | New York City"}
+        heightPadding="8rem"
+        addTypewriter="typewriter"
+      />
 
-        <Project
-          projTitle="BulkRenamer"
-          projDesc="A Handy Tool for Windows"
-          projbtnLink="/Project1"
-          projbtnText="Learn More"
-          projbtnClass="button-hover-animation"
-          projHeight="8rem"
-          projImage={projImage1}
-          projBG="main-blue"
-        />
-        <Project
-          projTitle="Web Scraper"
-          projDesc="Coming Soon..."
-          projbtnLink="/Project2"
-          projbtnText="Learn More"
-          projbtnClass="button-hover-animation"
-          projHeight="8rem"
-          projBG="main-dark"
-        />
-        <Project
-          projTitle="N/A"
-          projDesc="Coming Later..."
-          projbtnLink="/Project3"
-          projbtnText="Learn More"
-          projbtnClass="button-hover-animation"
-          projHeight="8rem"
-          projBG="main-blue"
-        />
-      </div>
-
+      <Project
+        projTitle="BulkRenamer"
+        projDesc="A Handy Tool for Windows"
+        projbtnLink="/Project1"
+        projbtnText="Learn More"
+        projbtnClass="button-hover-animation"
+        projImage={projImage1}
+        projBG="main-blue"
+      />
+      <Project
+        projTitle="Web Scraper"
+        projDesc="Coming Soon..."
+        projbtnLink="/Project2"
+        projbtnText="Learn More"
+        projbtnClass="button-hover-animation"
+        projBG="main-dark"
+      />
+      <Project
+        projTitle="N/A"
+        projDesc="Coming Later..."
+        projbtnLink="/Project3"
+        projbtnText="Learn More"
+        projbtnClass="button-hover-animation"
+        projBG="main-blue"
+      />
       <div className="main-dark py-5 text-white">
-        <h1 className="py-5">Interested? Let's connect</h1>
+        <h1 className=" d-flex align-items-center justify-content-center py-5">
+          Interested? Let's connect
+        </h1>
         <ContactForm formWidth="50%" textAlign="left" />
       </div>
       <Footer
