@@ -32,4 +32,7 @@ a {
   text-decoration: inherit;
 }
 
+html, body {
+  overflow-x: hidden;
+}
 
