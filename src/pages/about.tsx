@@ -20,7 +20,7 @@ const About = () => {
 
       <HeroSection2
         Hname="About Me!"
-        Hsubtext="I'm a College Graduate with an Associate's Degree in Computer Science. Now pursuing a Bachelor's Degree in Computer Science. I'm a curious and determined programmer/developer, constantly searching for challenges, finding pleasure in problem-solving, and driven by results."
+        Hsubtext="I'm a College Student with an Associate's Degree in Computer Science. Now pursuing a Bachelor's Degree in Computer Science. I'm a curious and determined programmer/developer, constantly searching for challenges, finding pleasure in problem-solving, and driven by results."
       />
       <div className="main-blue text-white container-fluid">
         <div className="row align-items-center">

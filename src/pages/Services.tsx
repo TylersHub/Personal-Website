@@ -8,7 +8,7 @@ import ServiceIcon from "../assets/handshake.png";
 const Services = () => {
   return (
     <div>
-      <div className="main-dark" style={{ height: "100vh" }}>
+      <div className="main-dark d-flex flex-column min-vh-100">
         <Navbar
           navMainText="Tyler"
           navMainLink="/"
@@ -22,7 +22,7 @@ const Services = () => {
           navLink4="/Contacts"
         />
         <div
-          className="container-fluid text-center mb-3 mx-auto"
+          className="container-fluid text-center flex-grow-1 mb-3 mx-auto"
           style={{ marginTop: "5vh", maxWidth: "600px", padding: "3vh 0" }}
         >
           <h1 className="display-6 text-white">

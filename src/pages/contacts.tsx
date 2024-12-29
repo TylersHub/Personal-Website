@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 const Contacts = () => {
   return (
     <div>
-      <div className="main-dark">
+      <div className="main-dark d-flex flex-column min-vh-100">
         <Navbar
           navMainText="Tyler"
           navMainLink="/"
@@ -19,7 +19,7 @@ const Contacts = () => {
           navLink4="/Contacts"
         />
         <div
-          className="typewriter h1-container"
+          className="typewriter h1-container flex-grow-1"
           style={{ marginTop: "5vh", padding: "4vh 0" }}
         >
           <div>
