@@ -41,7 +41,7 @@
   .bar .progress-line span {
     display: block;
     position: absolute;
-    background: #25b79f;
+    background: #ff5722;
     height: 100%;
     border-radius: 10px;
     transform: scaleX(0);

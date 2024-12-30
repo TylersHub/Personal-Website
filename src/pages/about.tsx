@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import HeroSection2 from "../components/HeroSection2";
 import Footer from "../components/Footer";
 import "/src/css/SkillBar.css";
+import "/src/css/Timeline.css";
 
 const About = () => {
   return (
@@ -109,15 +110,87 @@ const About = () => {
               Libraries: React, NumPy, Beautiful Soup, SQLAlchemy, Boost,
               OpenGL, GLFW, ImGui, GLM
             </p>
-            <p>Frameworks: Flask, python, Express.js, Selenium</p>
+            <p>Frameworks: Flask, Bootstrap, Express.js, Selenium</p>
             <p className="pb-1 pb-sm-5">
-              Tools: VS Code, Visual Studio, Github,
+              Tools: VS Code, Visual Studio, Github, Node.js
             </p>
           </div>
         </div>
 
-        <div className="main-dark row justify-content-center">
-          <div className="col-12 col-md-6 mx-auto"></div>
+        <div className="main-blue row justify-content-center">
+          <div className="col mx-auto">
+            <section id="cd-timeline" className="cd-container">
+              <div className="cd-timeline-block">
+                <div className="cd-timeline-img cd-picture"></div>
+
+                <div className="cd-timeline-content">
+                  <h2>The City College of New York</h2>
+                  <div className="timeline-content-info">
+                    <span className="timeline-content-info-title">
+                      <i className="fa fa-certificate" aria-hidden="true"></i>
+                      Research Assistant - Data Science
+                    </span>
+                    <span className="timeline-content-info-date">
+                      <i className="fa fa-calendar-o" aria-hidden="true"></i>
+                      October 2024 - Present
+                    </span>
+                  </div>
+                  <p>
+                    Leveraged Python libraries such as Pandas and NumPy to
+                    manipulate and analyze datasets efficiently. Researched data
+                    related to safety metrics, identifying patterns, trends, and
+                    potential risks. Conducted a variety of data science tasks,
+                    including data collection, cleaning, preprocessing, and
+                    analysis, to extract meaningful insights and inform research
+                    outcomes.
+                  </p>
+                  <ul className="content-skills">
+                    <li>Python</li>
+                    <li>Pandas</li>
+                    <li>NumPy</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="cd-timeline-block">
+                <div className="cd-timeline-img cd-picture"></div>
+
+                <div className="cd-timeline-content">
+                  <h2>Personaland</h2>
+                  <div className="timeline-content-info">
+                    <span className="timeline-content-info-title">
+                      <i className="fa fa-certificate" aria-hidden="true"></i>
+                      Full Stack Developer
+                    </span>
+                    <span className="timeline-content-info-date">
+                      <i className="fa fa-calendar-o" aria-hidden="true"></i>
+                      July 2023 - August 2023
+                    </span>
+                  </div>
+                  <p>
+                    Created and managed a PostgreSQL database to store and
+                    handle data for multiple organizations that ensured
+                    scalability and efficient data handling. Developed a web
+                    application using HTML, CSS, and JavaScript, incorporating
+                    Express.js, Node.js, and Handlebars for dynamic content
+                    rendering. Integrated the database into the web application
+                    to ensure efficient data flow and functionality for internal
+                    users, reducing data access time by up to 90% through
+                    real-time display and seamless database interaction.
+                  </p>
+                  <ul className="content-skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>Handlebars</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
 
