@@ -24,6 +24,7 @@ const About = () => {
         Hname="About Me!"
         Hsubtext="I'm a College Student with an Associate's Degree in Computer Science. Now pursuing a Bachelor's Degree in Computer Science. I'm a curious and determined programmer/developer, constantly searching for challenges, finding pleasure in problem-solving, and driven by results."
       />
+
       <div className="text-white container-fluid">
         <div className="main-blue row align-items-center">
           <div className="col-12 col-md ms-lg-5 ps-lg-5 mx-auto text-center">
@@ -103,6 +104,7 @@ const About = () => {
             </div>
           </div>
         </div>
+
         <div className="main-dark row align-items-center">
           <div className="col-12 col-md-6 mx-auto text-center">
             <h1 className="fw-bold py-5">Other Technical Skills</h1>
@@ -154,7 +156,6 @@ const About = () => {
 
               <div className="cd-timeline-block">
                 <div className="cd-timeline-img cd-picture"></div>
-
                 <div className="cd-timeline-content">
                   <h2>Personaland</h2>
                   <div className="timeline-content-info">
@@ -190,6 +191,38 @@ const About = () => {
                 </div>
               </div>
             </section>
+          </div>
+        </div>
+
+        <div className="main-dark row align-items-center">
+          <div className="col pb-3">
+            <h1 className="fw-bold py-5">Activities</h1>
+            <div className="row">
+              <div className="col-6 mx-auto text-center">
+                <p className="p-2 p-sm-5">
+                  Google x BASTA: Google Software Engineering Mentorship Program
+                </p>
+              </div>
+              <div className="col-6 mx-auto text-center">
+                <p className="p-2 p-sm-5">
+                  Computer Builder: Built a few custom computers for friends
+                </p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-6 mx-auto text-center">
+                <p className="p-2 p-sm-5">
+                  QWorld Quantum Computing Workshop: Online Workshop with an
+                  introductory course to Quantum computing
+                </p>
+              </div>
+              <div className="col-6  mx-auto text-center">
+                <p className="p-2 p-sm-5">
+                  Codecademy Computer Science Course: An online course offering
+                  a professional computer science certificate
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
