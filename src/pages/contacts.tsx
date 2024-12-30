@@ -31,7 +31,7 @@ const Contacts = () => {
         </div>
         <div className="container-fluid">
           <div className="row">
-            <div className="social icon-hover icon-hover-big mb-1 pb-5">
+            <div className="social icon-hover icon-hover-big pb-5">
               <a href="https://www.linkedin.com/in/tylerrosa/" title="LinkedIn">
                 <i className="bi bi-linkedin"></i>
               </a>

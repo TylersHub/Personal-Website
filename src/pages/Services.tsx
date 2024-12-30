@@ -41,6 +41,10 @@ const Services = () => {
             btnClass="button-hover-animation mb-5"
             btnText="Let's do it"
           />
+          <p className="text-white fs-5 mt-1 py-2">
+            Services: Software Development, Full Stack Development, and Web
+            Development
+          </p>
         </div>
         <Footer
           fText1="+1-929-345-5228"
