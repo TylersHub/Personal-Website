@@ -37,6 +37,7 @@ const Portfolio: React.FC = () => {
         projbtnText="Learn More"
         projbtnClass="button-hover-animation"
         projImage={projImage1}
+        projImageWidth="28%"
         projBG="main-blue"
       />
       <Project
@@ -45,6 +46,7 @@ const Portfolio: React.FC = () => {
         projbtnLink="/Project2"
         projbtnText="Learn More"
         projbtnClass="button-hover-animation"
+        projImageWidth="28%"
         projBG="main-dark"
       />
       <Project
@@ -53,13 +55,14 @@ const Portfolio: React.FC = () => {
         projbtnLink="/Project3"
         projbtnText="Learn More"
         projbtnClass="button-hover-animation"
+        projImageWidth="28%"
         projBG="main-blue"
       />
       <div className="main-dark py-5 text-white">
         <h1 className=" d-flex align-items-center justify-content-center py-5">
           Interested? Let's connect
         </h1>
-        <ContactForm formWidth="50%" textAlign="left" />
+        <ContactForm formWidth="40%" textAlign="left" />
       </div>
       <Footer
         fText1="+1-929-345-5228"

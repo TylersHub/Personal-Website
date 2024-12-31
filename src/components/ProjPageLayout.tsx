@@ -27,6 +27,7 @@ const ProjPageLayout = ({
   projLaybtn2Text,
   projLaybtn2Class,
   projLayImage = "https://via.placeholder.com/300x200.png/000000/ffffff?text=%3F",
+  projLayImageWidth,
   projLayBG,
 }: Props) => {
   return (
@@ -45,7 +46,9 @@ const ProjPageLayout = ({
       />
       <Project
         projTitle={projLayTitle}
-        projDesc={projLayDesc}
+        projDesc={
+          <div className="col-md-6 my-4 mx-auto text-center">{projLayDesc}</div>
+        }
         projbtnLink={projLaybtnLink}
         projbtnText={projLaybtnText}
         projbtnClass={projLaybtnClass}
@@ -53,6 +56,7 @@ const ProjPageLayout = ({
         projbtn2Text={projLaybtn2Text}
         projbtn2Class={projLaybtn2Class}
         projImage={projLayImage}
+        projImageWidth={projLayImageWidth}
         projBG={projLayBG}
       />
       <Footer

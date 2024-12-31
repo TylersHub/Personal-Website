@@ -3,7 +3,7 @@ import Button from "./Button";
 
 interface Props {
   projTitle: string;
-  projDesc: string;
+  projDesc: React.ReactNode;
   projbtnLink: string;
   projbtnText: string;
   projbtnClass: string;
@@ -11,6 +11,7 @@ interface Props {
   projbtn2Text?: string;
   projbtn2Class?: string;
   projImage?: string;
+  projImageWidth?: string;
   projBG: string;
 }
 
@@ -24,6 +25,7 @@ const Project = ({
   projbtn2Text,
   projbtn2Class,
   projImage = "https://via.placeholder.com/300x200.png/000000/ffffff?text=%3F",
+  projImageWidth,
   projBG,
 }: Props) => {
   return (
@@ -34,7 +36,7 @@ const Project = ({
           <Image
             imgSrc={projImage}
             imgAlt="Project Image"
-            imgWidth="30%"
+            imgWidth={projImageWidth}
             imgClasses=""
           />
         </div>

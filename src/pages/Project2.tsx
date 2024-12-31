@@ -6,12 +6,11 @@ const Project2 = () => {
       <ProjPageLayout
         projLayTitle="Project 2"
         projLayDesc="Coming Soon..."
-        projLayHeight="50vh"
+        projLayHeight=""
         projLaybtnLink="/"
         projLaybtnText="Coming Soon..."
         projLaybtnClass="button-hover-animation"
-        projLayImage=""
-        projLayBG="main-blue"
+        projLayBG="main-dark min-vh-100"
       />
     </div>
   );

@@ -14,7 +14,7 @@ const HeroSection2 = ({ Hname, Hsubtext, Hsubtext2, addTypewriter }: Props) => {
     <div className="main-dark text-white container-fluid">
       <div className="row align-items-center">
         {/* Left Column */}
-        <div className="col-12 col-md d-flex justify-content-center justify-content-md-end p-5">
+        <div className="col-12 col-md d-flex justify-content-center justify-content-md-end py-5 ps-lg-5">
           <div className={`${addTypewriter} ps-md-5`}>
             <p className="lead px-md-5 fs-2">{Hsubtext}</p>
           </div>
@@ -25,7 +25,7 @@ const HeroSection2 = ({ Hname, Hsubtext, Hsubtext2, addTypewriter }: Props) => {
         </div>
 
         {/* Right Column */}
-        <div className="col-12 col-md  pe-md-5">
+        <div className="col-12 col-md pe-md-5">
           <div className="row">
             <div className="col-12 typewriter mt-4">
               <div>
@@ -39,7 +39,7 @@ const HeroSection2 = ({ Hname, Hsubtext, Hsubtext2, addTypewriter }: Props) => {
               <Image
                 imgSrc={meImage}
                 imgAlt="Image of Me"
-                imgWidth="70%"
+                imgWidth="60%"
                 imgClasses="rounded-circle"
                 imgMargin=""
               />

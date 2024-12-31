@@ -27,7 +27,7 @@ const Contacts = () => {
           </div>
         </div>
         <div className="py-2 mb-5">
-          <ContactForm formWidth="50%" textAlign="center" />
+          <ContactForm formWidth="45%" textAlign="center" />
         </div>
         <div className="container-fluid">
           <div className="row">
