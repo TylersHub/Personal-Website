@@ -85,3 +85,50 @@
   top: -50%;
   left: -30%;
 }
+
+
+
+/* Scroll to Top Button CSS*/
+
+.button-hover-animation-top {
+  font-family: sans-serif;
+  font-size: 0.8em;
+  border: none;
+  border-radius: 20%;
+  padding: 0.12em 0.8em;
+  display: inline-block;
+  overflow: hidden;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff5722; 
+  color: #1e232b;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease, 0.4s transform ease-in-out, 0.4s box-shadow ease-in-out;
+}
+
+.button-hover-animation-top:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.25);
+}
+
+.button-hover-animation-top::before {
+  /*background-color: #4b22eb;*/
+  background-color: #d5481d;
+  border-radius: 100%;
+  width: 150%;
+  height: 300%;
+  position: absolute;
+  z-index: -1;
+  top: 100%;
+  left: 100%;
+  content: "";
+  transition: 0.4s all ease-in-out;
+}
+
+.button-hover-animation-top:hover::before {
+  top: -50%;
+  left: -30%;
+}

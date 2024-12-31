@@ -6,6 +6,7 @@ import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import projImage1 from "../assets/BulkRenamer_Logo.png";
 import "../css/Colors.css";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 
 const Portfolio: React.FC = () => {
   return (
@@ -69,6 +70,7 @@ const Portfolio: React.FC = () => {
         fText2="18tyler.rosa1@gmail.com"
         fText3=" Tyler Rosa. All rights reserved."
       />
+      <ScrollToTopButton />
     </div>
   );
 };
