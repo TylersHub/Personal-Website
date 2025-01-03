@@ -19,7 +19,7 @@ const Contacts = () => {
           navLink4="/Contacts"
         />
         <div className="row justify-content-center">
-          <div className="col-11 col-md-8">
+          <div className="col-11 col-md-6">
             <div
               className="typewriter h1-container flex-grow-1"
               style={{ marginTop: "2vh", padding: "4vh 0" }}

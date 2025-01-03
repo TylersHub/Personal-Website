@@ -61,7 +61,7 @@ const Portfolio: React.FC = () => {
       />
       <div className="main-dark py-5 text-white">
         <div className="row justify-content-center">
-          <div className="col-11 col-md-8">
+          <div className="col-11 col-md-6">
             <h1 className=" d-flex align-items-center justify-content-center py-3">
               Interested? Let's connect
             </h1>

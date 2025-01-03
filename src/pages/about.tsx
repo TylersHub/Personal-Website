@@ -25,79 +25,83 @@ const About = () => {
         Hsubtext="I'm a College Student with an Associate's Degree in Computer Science. Now pursuing a Bachelor's Degree in Computer Science. I'm a curious and determined programmer/developer, constantly searching for challenges, finding pleasure in problem-solving, and driven by results."
       />
 
-      <div className="text-white container-fluid">
-        <div className="main-blue row align-items-center">
-          <div className="col-12 col-md ms-lg-5 ps-lg-5 mx-auto text-center">
-            <div className="skills">
-              <div className="skills-bar">
-                <div className="bar">
-                  <div className="info">
-                    <span>PYTHON</span>
-                  </div>
-                  <div className="progress-line">
-                    <span className="python"></span>
-                  </div>
-                </div>
-                <div className="bar">
-                  <div className="info">
-                    <span>JAVA</span>
-                  </div>
-                  <div className="progress-line">
-                    <span className="java"></span>
-                  </div>
-                </div>
-                <div className="bar">
-                  <div className="info">
-                    <span>JAVASCRIPT</span>
-                  </div>
-                  <div className="progress-line">
-                    <span className="javascript"></span>
-                  </div>
-                </div>
-                <div className="bar">
-                  <div className="info">
-                    <span>TYPESCRIPT</span>
-                  </div>
-                  <div className="progress-line">
-                    <span className="typescript"></span>
+      <div className="text-white container-fluid main-blue ">
+        <div className="row justify-content-center">
+          <div className="col-12 col-md-10">
+            <div className="row align-items-center">
+              <div className="col-12 col-md mx-auto text-center">
+                <div className="skills">
+                  <div className="skills-bar">
+                    <div className="bar">
+                      <div className="info">
+                        <span>PYTHON</span>
+                      </div>
+                      <div className="progress-line">
+                        <span className="python"></span>
+                      </div>
+                    </div>
+                    <div className="bar">
+                      <div className="info">
+                        <span>JAVA</span>
+                      </div>
+                      <div className="progress-line">
+                        <span className="java"></span>
+                      </div>
+                    </div>
+                    <div className="bar">
+                      <div className="info">
+                        <span>JAVASCRIPT</span>
+                      </div>
+                      <div className="progress-line">
+                        <span className="javascript"></span>
+                      </div>
+                    </div>
+                    <div className="bar">
+                      <div className="info">
+                        <span>TYPESCRIPT</span>
+                      </div>
+                      <div className="progress-line">
+                        <span className="typescript"></span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="col-12 col-md me-lg-5 pe-lg-5 mx-auto text-center">
-            <div className="skills">
-              <div className="skills-bar">
-                <div className="bar">
-                  <div className="info">
-                    <span>C++</span>
-                  </div>
-                  <div className="progress-line">
-                    <span className="c"></span>
-                  </div>
-                </div>
-                <div className="bar">
-                  <div className="info">
-                    <span>SQL</span>
-                  </div>
-                  <div className="progress-line">
-                    <span className="sql"></span>
-                  </div>
-                </div>
-                <div className="bar">
-                  <div className="info">
-                    <span>HTML</span>
-                  </div>
-                  <div className="progress-line">
-                    <span className="html"></span>
-                  </div>
-                </div>
-                <div className="bar">
-                  <div className="info">
-                    <span>CSS</span>
-                  </div>
-                  <div className="progress-line">
-                    <span className="css"></span>
+              <div className="col-12 col-md mx-auto text-center">
+                <div className="skills">
+                  <div className="skills-bar">
+                    <div className="bar">
+                      <div className="info">
+                        <span>C++</span>
+                      </div>
+                      <div className="progress-line">
+                        <span className="c"></span>
+                      </div>
+                    </div>
+                    <div className="bar">
+                      <div className="info">
+                        <span>SQL</span>
+                      </div>
+                      <div className="progress-line">
+                        <span className="sql"></span>
+                      </div>
+                    </div>
+                    <div className="bar">
+                      <div className="info">
+                        <span>HTML</span>
+                      </div>
+                      <div className="progress-line">
+                        <span className="html"></span>
+                      </div>
+                    </div>
+                    <div className="bar">
+                      <div className="info">
+                        <span>CSS</span>
+                      </div>
+                      <div className="progress-line">
+                        <span className="css"></span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -194,8 +198,8 @@ const About = () => {
           </div>
         </div>
 
-        <div className="main-dark row align-items-center">
-          <div className="col pb-3">
+        <div className="row main-dark align-items-center justify-content-center">
+          <div className="col-12 col-md-10 pb-3">
             <h1 className="fw-bold py-5">Activities</h1>
             <div className="row">
               <div className="col-6 mx-auto text-center">
