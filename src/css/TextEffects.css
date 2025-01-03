@@ -10,25 +10,28 @@
 
 p {
   font-family: monospace;
-  font-size: 2rem;
+  /*font-size: 2rem;*/
   margin-inline: auto;
   white-space: normal;
-
+  font-size: clamp(1rem, 3vw, 2rem); /* Extremely Important and useful! */
 }
 
 h1 {
   font-family: monospace;
-  font-size: 4rem;
+  /*font-size: 4rem;*/
   margin-inline: auto;
   white-space: normal;
+  font-size: clamp(2rem, 5vw, 4rem); /* Extremely Important and useful! */
 }
 
 h2 {
   font-family: monospace;
   font-family: monospace;
   margin-inline: auto;
-  white-space: nowrap;
+  white-space: normal;
+  font-size: clamp(1.5rem, 3.75vw, 3rem); /* Extremely Important and useful! */
 }
+
 
 /* TypeWriter Effect */
   

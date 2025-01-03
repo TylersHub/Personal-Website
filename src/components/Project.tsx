@@ -42,7 +42,7 @@ const Project = ({
         </div>
       </div>
       {/* Text Row */}
-      <div className="row ">
+      <div className="row">
         <div className="col-12 d-flex justify-content-center">
           <h2 className="mt-3 fw-bold">{projTitle}</h2>
         </div>
@@ -50,7 +50,7 @@ const Project = ({
       {/* Text Row 2 */}
       <div className="row ">
         <div className="col-12 d-flex justify-content-center">
-          <p className="fs-4">{projDesc}</p>
+          <p>{projDesc}</p>
         </div>
       </div>
       {/* Button Row */}

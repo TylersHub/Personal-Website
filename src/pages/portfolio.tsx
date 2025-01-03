@@ -60,10 +60,14 @@ const Portfolio: React.FC = () => {
         projBG="main-blue"
       />
       <div className="main-dark py-5 text-white">
-        <h1 className=" d-flex align-items-center justify-content-center py-5">
-          Interested? Let's connect
-        </h1>
-        <ContactForm formWidth="40%" textAlign="left" />
+        <div className="row justify-content-center">
+          <div className="col-11 col-md-8">
+            <h1 className=" d-flex align-items-center justify-content-center py-3">
+              Interested? Let's connect
+            </h1>
+            <ContactForm textAlign="left" />
+          </div>
+        </div>
       </div>
       <Footer
         fText1="+1-929-345-5228"

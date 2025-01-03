@@ -21,30 +21,30 @@ const Services = () => {
           navText4="Contact"
           navLink4="/Contacts"
         />
-        <div
-          className="container-fluid text-center flex-grow-1 mb-3 mx-auto"
-          style={{ marginTop: "5vh", maxWidth: "600px", padding: "3vh 0" }}
-        >
-          <h1 className="display-6 text-white">
-            Interested in having your own website? Or even your own software
-            application? Contact me, and let's work together!
-          </h1>
-          <Image
-            imgSrc={ServiceIcon}
-            imgAlt="Project Image"
-            imgWidth="48%"
-            imgClasses="pt-2"
-            imgMargin="0 auto"
-          />
-          <Button
-            btnLink="/Contacts"
-            btnClass="button-hover-animation mb-5"
-            btnText="Let's do it"
-          />
-          <p className="text-white fs-5 mt-1 py-2">
-            Services: Software Development, Full Stack Development, and Web
-            Development
-          </p>
+        <div className="container-fluid text-center flex-grow-1">
+          <div className="row justify-content-center align-items-center">
+            <div className="col-11 col-md-8 text-center">
+              <h2 className="text-white pt-5">
+                Interested in having your own website or software application?
+                Contact me, and let's work together!
+              </h2>
+              <Image
+                imgSrc={ServiceIcon}
+                imgAlt="Service Icon"
+                imgWidth="35%"
+                imgClasses="pt-2 pt-md-1 mx-auto"
+              />
+              <Button
+                btnLink="/Contacts"
+                btnClass="button-hover-animation mt-4 mt-md-0 mb-4"
+                btnText="Let's do it"
+              />
+              <p className="text-white mt-1 py-2">
+                Services: Software Development, Full Stack Development, and Web
+                Development
+              </p>
+            </div>
+          </div>
         </div>
         <Footer
           fText1="+1-929-345-5228"

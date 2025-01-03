@@ -3,10 +3,9 @@ interface Props {
   imgAlt: string;
   imgWidth?: string;
   imgClasses?: string;
-  imgMargin?: string;
 }
 
-const Image = ({ imgSrc, imgAlt, imgWidth, imgClasses, imgMargin }: Props) => {
+const Image = ({ imgSrc, imgAlt, imgWidth, imgClasses }: Props) => {
   return (
     <img
       src={imgSrc}
@@ -15,7 +14,6 @@ const Image = ({ imgSrc, imgAlt, imgWidth, imgClasses, imgMargin }: Props) => {
       style={{
         width: imgWidth,
         display: "block",
-        margin: imgMargin,
         objectFit: "cover",
       }}
     />

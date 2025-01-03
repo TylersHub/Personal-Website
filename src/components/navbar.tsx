@@ -45,8 +45,8 @@ const Navbar = ({
             className="collapse navbar-collapse text-white"
             id="navbarToggler"
           >
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="">
+            <ul className="navbar-nav mt-sm-0 mt-3 mb-md-0 mb-2">
+              <li>
                 <a
                   className="fw-bold"
                   aria-current="page"
@@ -57,43 +57,23 @@ const Navbar = ({
                   {navMainText}
                 </a>
               </li>
-              <li className="">
-                <a
-                  className=""
-                  aria-current="page"
-                  href={navLink1}
-                  data-alt="Portfolio"
-                >
+              <li>
+                <a aria-current="page" href={navLink1} data-alt="Portfolio">
                   {navText1}
                 </a>
               </li>
-              <li className="">
-                <a
-                  className=""
-                  aria-current="page"
-                  href={navLink2}
-                  data-alt="About"
-                >
+              <li>
+                <a aria-current="page" href={navLink2} data-alt="About">
                   {navText2}
                 </a>
               </li>
-              <li className="">
-                <a
-                  className=""
-                  aria-current="page"
-                  href={navLink3}
-                  data-alt="Services"
-                >
+              <li>
+                <a aria-current="page" href={navLink3} data-alt="Services">
                   {navText3}
                 </a>
               </li>
-              <li className="">
-                <a
-                  className=""
-                  aria-current="page"
-                  href={navLink4}
-                  data-alt="Contact"
-                >
+              <li>
+                <a aria-current="page" href={navLink4} data-alt="Contact">
                   {navText4}
                 </a>
               </li>

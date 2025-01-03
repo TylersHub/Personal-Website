@@ -21,7 +21,6 @@ const HeroSection = ({ Hname, Hsubtext, Hsubtext2, addTypewriter }: Props) => {
             imgAlt="Image of Me"
             imgWidth="67%"
             imgClasses="rounded-circle"
-            imgMargin=""
           />
         </div>
 

@@ -2,14 +2,10 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 interface Props {
-  formWidth: string;
   textAlign?: "left" | "right" | "center" | "justify" | "initial" | "inherit";
 }
 
-const ContactForm: React.FC<Props> = ({
-  formWidth,
-  textAlign = "left",
-}: Props) => {
+const ContactForm: React.FC<Props> = ({ textAlign = "left" }: Props) => {
   const form = useRef<HTMLFormElement | null>(null); // Ref for form
   const buttonRef = useRef<HTMLButtonElement | null>(null); // Ref for the submit button
   const [btnText, setBtnText] = useState("Submit");
@@ -48,10 +44,7 @@ const ContactForm: React.FC<Props> = ({
   return (
     <div className="container-fluid main-dark text-white py-4">
       <form ref={form} onSubmit={sendEmail}>
-        <div
-          className="mx-auto main-dark pb-3"
-          style={{ maxWidth: formWidth, textAlign }}
-        >
+        <div className="mx-auto main-dark pb-3" style={{ textAlign }}>
           <div className="mb-3">
             <label htmlFor="name" className="form-label">
               Name

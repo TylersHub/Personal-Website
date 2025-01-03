@@ -18,27 +18,34 @@ const Contacts = () => {
           navText4="Contact"
           navLink4="/Contacts"
         />
-        <div
-          className="typewriter h1-container flex-grow-1"
-          style={{ marginTop: "2vh", padding: "4vh 0" }}
-        >
-          <div>
-            <h1 className="display-2 text-white">Contact Me</h1>
-          </div>
-        </div>
-        <div className="py-2 mb-5">
-          <ContactForm formWidth="45%" textAlign="center" />
-        </div>
-        <div className="container-fluid">
-          <div className="row">
-            <div className="social icon-hover icon-hover-big pb-5">
-              <a href="https://www.linkedin.com/in/tylerrosa/" title="LinkedIn">
-                <i className="bi bi-linkedin"></i>
-              </a>
-              <div className="px-3"></div>
-              <a href="https://github.com/TylersHub" title="Github">
-                <i className="bi bi-github"></i>
-              </a>
+        <div className="row justify-content-center">
+          <div className="col-11 col-md-8">
+            <div
+              className="typewriter h1-container flex-grow-1"
+              style={{ marginTop: "2vh", padding: "4vh 0" }}
+            >
+              <div>
+                <h1 className="display-2 text-white">Contact Me</h1>
+              </div>
+            </div>
+            <div className="py-2 mb-5">
+              <ContactForm textAlign="center" />
+            </div>
+            <div className="container-fluid">
+              <div className="row">
+                <div className="social icon-hover icon-hover-big pb-5">
+                  <a
+                    href="https://www.linkedin.com/in/tylerrosa/"
+                    title="LinkedIn"
+                  >
+                    <i className="bi bi-linkedin"></i>
+                  </a>
+                  <div className="px-3"></div>
+                  <a href="https://github.com/TylersHub" title="Github">
+                    <i className="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
