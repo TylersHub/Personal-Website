@@ -7,7 +7,7 @@ const Contacts = () => {
     <div>
       <div className="main-dark d-flex flex-column min-vh-100">
         <Navbar
-          navMainText="Tyler"
+          navMainText="Tyler Rosa"
           navMainLink="/"
           navText1="Portfolio"
           navLink1="/"

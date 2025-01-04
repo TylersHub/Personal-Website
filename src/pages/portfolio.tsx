@@ -12,7 +12,7 @@ const Portfolio: React.FC = () => {
   return (
     <div>
       <Navbar
-        navMainText="Tyler"
+        navMainText="Tyler Rosa"
         navMainLink="/"
         navText1="Portfolio"
         navLink1="/"

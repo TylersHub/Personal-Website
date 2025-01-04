@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div>
       <Navbar
-        navMainText="Tyler"
+        navMainText="Tyler Rosa"
         navMainLink="/"
         navText1="Portfolio"
         navLink1="/"
@@ -22,7 +22,7 @@ const About = () => {
 
       <HeroSection2
         Hname="About Me!"
-        Hsubtext="I'm a College Student with an Associate's Degree in Computer Science. Now pursuing a Bachelor's Degree in Computer Science. I'm a curious and determined programmer/developer, constantly searching for challenges, finding pleasure in problem-solving, and driven by results."
+        Hsubtext="I'm a college student with an Associate's Degree in Computer Science, currently pursuing a Bachelor's Degree in the same field. As a curious and driven individual, I enjoy exploring new things, solving problems, and achieving meaningful results. My curiosity fuels my constant pursuit of knowledge and growth, leading me to work on personal projects and seek out opportunities to learn and improve."
       />
 
       <div className="text-white container-fluid main-blue ">

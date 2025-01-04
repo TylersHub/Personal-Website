@@ -45,18 +45,7 @@ const Navbar = ({
             className="collapse navbar-collapse text-white"
             id="navbarToggler"
           >
-            <ul className="navbar-nav mt-sm-0 mt-3 mb-md-0 mb-2">
-              <li>
-                <a
-                  className="fw-bold"
-                  aria-current="page"
-                  href={navMainLink}
-                  style={{ fontWeight: "bold" }}
-                  data-alt="Tyler"
-                >
-                  {navMainText}
-                </a>
-              </li>
+            <ul className="navbar-nav mt-sm-0 mt-3 mb-md-0 mb-2 w-100">
               <li>
                 <a aria-current="page" href={navLink1} data-alt="Portfolio">
                   {navText1}
@@ -75,6 +64,17 @@ const Navbar = ({
               <li>
                 <a aria-current="page" href={navLink4} data-alt="Contact">
                   {navText4}
+                </a>
+              </li>
+              <li className="ms-md-auto">
+                <a
+                  className="fw-bold"
+                  aria-current="page"
+                  href={navMainLink}
+                  style={{ fontWeight: "bold" }}
+                  data-alt="Tyler Rosa"
+                >
+                  {navMainText}
                 </a>
               </li>
             </ul>
