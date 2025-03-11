@@ -18,7 +18,11 @@ Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTIN
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+## Live Site
+
+Check out my personal website [here]([https://yourpersonalsite.com](https://tylerrosa.com/)).
 
 ---
 
