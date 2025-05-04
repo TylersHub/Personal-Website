@@ -22,7 +22,7 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ## Live Site
 
-Check out my personal website [here]([https://yourpersonalsite.com](https://tylerrosa.com/)).
+Check out my personal website [here](https://tylerrosa.com/).
 
 ---
 
