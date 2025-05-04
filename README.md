@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/2c86a6aa-4ced-498d-a5ad-63c95caab71b)
+![image](https://github.com/user-attachments/assets/0b18bdc7-7749-41f8-8fb7-f2c35965ffc1)
+
 
 
 # Personal Website
