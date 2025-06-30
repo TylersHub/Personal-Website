@@ -5,10 +5,10 @@ const Project3 = () => {
     <div>
       <ProjPageLayout
         projLayTitle="Project 3"
-        projLayDesc="Coming Later..."
+        projLayDesc="Coming soon..."
         projLayHeight=""
         projLaybtnLink="/"
-        projLaybtnText="Coming Later..."
+        projLaybtnText="Coming soon..."
         projLaybtnClass="button-hover-animation"
         projLayBG="main-dark min-vh-100"
       />

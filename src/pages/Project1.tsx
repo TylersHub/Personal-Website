@@ -6,8 +6,7 @@ const Project1 = () => {
     <div>
       <ProjPageLayout
         projLayTitle="BulkRenamer"
-        projLayDesc="A Windows Software Application made in C++ with libraries such as OpenGL, GLFW, ImGui, GLM, and Boost in Visual
-Studio that renames multiple files simultaneously. Offers different renaming options for flexibility, designed as a user-friendly GUI to provide an easy and smooth experience."
+        projLayDesc="A Windows Software Application that renames multiple files simultaneously. Offers different renaming options for flexibility, designed as a user-friendly GUI to provide an easy and smooth experience. Made in C++ with libraries such as OpenGL, GLFW, ImGui, GLM, and Boost in Visual Studio."
         projLayHeight=""
         projLaybtnLink="https://github.com/TylersHub/BulkRenamer/releases/download/v2.2.2/BulkRenamer_Release_x64.exe"
         projLaybtnText="Download"

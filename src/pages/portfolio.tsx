@@ -42,8 +42,8 @@ const Portfolio: React.FC = () => {
         projBG="main-blue"
       />
       <Project
-        projTitle="Web Scraper"
-        projDesc="Coming Soon..."
+        projTitle="Pricetunity"
+        projDesc="Product Scraping Site"
         projbtnLink="/Project2"
         projbtnText="Learn More"
         projbtnClass="button-hover-animation"
@@ -52,7 +52,7 @@ const Portfolio: React.FC = () => {
       />
       <Project
         projTitle="N/A"
-        projDesc="Coming Later..."
+        projDesc="Coming soon..."
         projbtnLink="/Project3"
         projbtnText="Learn More"
         projbtnClass="button-hover-animation"
