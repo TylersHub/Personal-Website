@@ -10,8 +10,6 @@ interface Props {
   navLink2: string;
   navText3: string;
   navLink3: string;
-  navText4: string;
-  navLink4: string;
 }
 
 const Navbar = ({
@@ -23,8 +21,6 @@ const Navbar = ({
   navLink2,
   navText3,
   navLink3,
-  navText4,
-  navLink4,
 }: Props) => {
   return (
     <div>
@@ -57,13 +53,8 @@ const Navbar = ({
                 </a>
               </li>
               <li>
-                <a aria-current="page" href={navLink3} data-alt="Services">
+                <a aria-current="page" href={navLink3} data-alt="Contact">
                   {navText3}
-                </a>
-              </li>
-              <li>
-                <a aria-current="page" href={navLink4} data-alt="Contact">
-                  {navText4}
                 </a>
               </li>
               <li className="ms-md-auto">

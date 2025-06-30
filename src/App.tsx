@@ -5,7 +5,6 @@ import Contacts from "./pages/Contacts";
 import Project1 from "./pages/Project1";
 import Project2 from "./pages/Project2";
 import Project3 from "./pages/Project3";
-import Services from "./pages/Services";
 import "./App.css";
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
           <Route path="/Project1" element={<Project1 />} />
           <Route path="/Project2" element={<Project2 />} />
           <Route path="/Project3" element={<Project3 />} />
-          <Route path="/Services" element={<Services />} />
         </Routes>
       </Router>
     </div>

@@ -14,15 +14,13 @@ const About = () => {
         navLink1="/"
         navText2="About"
         navLink2="/About"
-        navText3="Services"
-        navLink3="/Services"
-        navText4="Contact"
-        navLink4="/Contacts"
+        navText3="Contact"
+        navLink3="/Contacts"
       />
 
       <HeroSection2
         Hname="About Me!"
-        Hsubtext="I'm a college student with an Associate's Degree in Computer Science, currently pursuing a Bachelor's Degree in the same field. As a curious and driven individual, I enjoy exploring new things, solving problems, and achieving meaningful results. My curiosity fuels my constant pursuit of knowledge and growth, leading me to work on personal projects and seek out opportunities to learn and improve."
+        Hsubtext="I'm a computer science student with an Associate's Degree, currently working toward my Bachelor's Degree to further deepen my knowledge and skills in the field. As a curious and driven individual, I enjoy exploring new things, solving problems, and achieving meaningful results. My curiosity fuels a constant pursuit of knowledge and growth, leading me to work on personal projects and seek out opportunities to learn and improve."
       />
 
       <div className="text-white container-fluid main-blue ">

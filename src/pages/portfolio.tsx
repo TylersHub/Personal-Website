@@ -18,10 +18,8 @@ const Portfolio: React.FC = () => {
         navLink1="/"
         navText2="About"
         navLink2="/About"
-        navText3="Services"
-        navLink3="/Services"
-        navText4="Contact"
-        navLink4="/Contacts"
+        navText3="Contact"
+        navLink3="/Contacts"
       />
       <HeroSection
         Hname="Hi, I'm Tyler"

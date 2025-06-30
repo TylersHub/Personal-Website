@@ -13,10 +13,8 @@ const Contacts = () => {
           navLink1="/"
           navText2="About"
           navLink2="/About"
-          navText3="Services"
-          navLink3="/Services"
-          navText4="Contact"
-          navLink4="/Contacts"
+          navText3="Contact"
+          navLink3="/Contacts"
         />
         <div className="row justify-content-center">
           <div className="col-11 col-md-6">
@@ -27,6 +25,15 @@ const Contacts = () => {
               <div>
                 <h1 className="display-2 text-white">Contact Me</h1>
               </div>
+            </div>
+            <div
+              className="flex-grow-1"
+              style={{padding: "0vh 0" }}
+            >
+              <div>
+                <p className="text-white"><b>Need a developer?</b><br></br>I offer a <b>wide range</b> of services in software development to help bring <b>your</b> ideas to <b>life</b>.</p>
+              </div>
+            
             </div>
             <div className="py-2 mb-5">
               <ContactForm textAlign="center" />

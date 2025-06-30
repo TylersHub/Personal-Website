@@ -16,9 +16,9 @@ const HeroSection2 = ({ Hname, Hsubtext, Hsubtext2, addTypewriter }: Props) => {
         <div className="col-12 col-lg-9">
           <div className="row align-items-center">
             {/* Left Column */}
-            <div className="col-12 col-lg d-flex justify-content-center justify-content-md-end pt-3 py-md-5">
+            <div className="col-12 col-lg d-flex justify-content-center justify-content-md-end pt-3 py-md-5 ms-lg-5">
               <div className={`${addTypewriter}`}>
-                <p className="lead fs-2">{Hsubtext}</p>
+                <p className="">{Hsubtext}</p>
               </div>
 
               <div className={addTypewriter}>
