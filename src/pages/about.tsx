@@ -1,7 +1,6 @@
 import Navbar from "../components/Navbar";
 import HeroSection2 from "../components/HeroSection2";
 import Footer from "../components/Footer";
-import "/src/css/SkillBar.css";
 import "/src/css/Timeline.css";
 
 const About = () => {
@@ -22,91 +21,133 @@ const About = () => {
         Hname="About Me!"
         Hsubtext="I'm a computer science student with an Associate's Degree, currently working toward my Bachelor's Degree to further deepen my knowledge and skills in the field. As a curious and driven individual, I enjoy exploring new things, solving problems, and achieving meaningful results. My curiosity fuels a constant pursuit of knowledge and growth, leading me to work on personal projects and seek out opportunities to learn and improve."
       />
-
       <div className="text-white container-fluid main-blue ">
         <div className="row justify-content-center">
-          <div className="col-12 col-md-10">
-            <div className="row align-items-center">
-              <div className="col-12 col-md mx-auto text-center">
-                <div className="skills">
-                  <div className="skills-bar">
-                    <div className="bar">
-                      <div className="info">
-                        <span>PYTHON</span>
-                      </div>
-                      <div className="progress-line">
-                        <span className="python"></span>
-                      </div>
-                    </div>
-                    <div className="bar">
-                      <div className="info">
-                        <span>JAVA</span>
-                      </div>
-                      <div className="progress-line">
-                        <span className="java"></span>
-                      </div>
-                    </div>
-                    <div className="bar">
-                      <div className="info">
-                        <span>JAVASCRIPT</span>
-                      </div>
-                      <div className="progress-line">
-                        <span className="javascript"></span>
-                      </div>
-                    </div>
-                    <div className="bar">
-                      <div className="info">
-                        <span>TYPESCRIPT</span>
-                      </div>
-                      <div className="progress-line">
-                        <span className="typescript"></span>
-                      </div>
-                    </div>
-                  </div>
+          <div className="col-12 col-md-10 p-5">
+            <h1 className="fw-bold pb-5">Languages</h1>
+            <div className="slider">
+              <div className="slide-track">
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                    alt="Python"
+                    style={{ width: "8vw" }}
+                  />
                 </div>
-              </div>
-              <div className="col-12 col-md mx-auto text-center">
-                <div className="skills">
-                  <div className="skills-bar">
-                    <div className="bar">
-                      <div className="info">
-                        <span>C++</span>
-                      </div>
-                      <div className="progress-line">
-                        <span className="c"></span>
-                      </div>
-                    </div>
-                    <div className="bar">
-                      <div className="info">
-                        <span>SQL</span>
-                      </div>
-                      <div className="progress-line">
-                        <span className="sql"></span>
-                      </div>
-                    </div>
-                    <div className="bar">
-                      <div className="info">
-                        <span>HTML</span>
-                      </div>
-                      <div className="progress-line">
-                        <span className="html"></span>
-                      </div>
-                    </div>
-                    <div className="bar">
-                      <div className="info">
-                        <span>CSS</span>
-                      </div>
-                      <div className="progress-line">
-                        <span className="css"></span>
-                      </div>
-                    </div>
-                  </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                    alt="TypeScript"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JavaScript"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                    alt="C++"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg"
+                    alt="Solidity"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    alt="HTML"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    alt="CSS"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                    alt="Python"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                    alt="TypeScript"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JavaScript"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                    alt="C++"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg"
+                    alt="Solidity"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    alt="HTML"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    alt="CSS"
+                    style={{ width: "8vw" }}
+                  />
                 </div>
               </div>
             </div>
+
+            {/* <div className="row align-items-center py-5">
+      <div className="col-12 col-md mx-auto text-center d-flex flex-wrap justify-content-center gap-3">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" style={{ width: "5vw" }} alt="Python" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" style={{ width: "5vw" }} alt="Java" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style={{ width: "5vw" }} alt="JavaScript" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" style={{ width: "5vw" }} alt="TypeScript" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg" style={{ width: "5vw" }} alt="Solidity"/>
+      </div>
+
+      <div className="col-12 col-md mx-auto text-center d-flex flex-wrap justify-content-center gap-3">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" style={{ width: "5vw" }} alt="C++" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style={{ width: "5vw" }} alt="CSS3" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style={{ width: "5vw" }} alt="HTML5" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style={{ width: "5vw" }} alt="CSS3" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" style={{ width: "5vw" }} alt="Bootstrap"/>
+      </div>
+    </div> */}
           </div>
         </div>
-
         <div className="main-dark row align-items-center">
           <div className="col-12 col-md-6 mx-auto text-center">
             <h1 className="fw-bold py-5">Other Technical Skills</h1>

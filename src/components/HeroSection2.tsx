@@ -1,6 +1,7 @@
 import Image from "./Image";
 import "../css/TextEffects.css";
 import meImage from "../assets/me.png";
+import "../css/IconCarousel.css";
 
 interface Props {
   Hname: string;
@@ -27,7 +28,7 @@ const HeroSection2 = ({ Hname, Hsubtext, Hsubtext2, addTypewriter }: Props) => {
             </div>
 
             {/* Right Column */}
-            <div className="col-12 col-lg ">
+            <div className="col-12 col-lg-5">
               <div className="row">
                 <div className="col-12 typewriter">
                   <div>
@@ -37,7 +38,7 @@ const HeroSection2 = ({ Hname, Hsubtext, Hsubtext2, addTypewriter }: Props) => {
               </div>
 
               <div className="row pt-2 pb-5 ">
-                <div className="col-12 d-flex justify-content-center">
+                <div className="col-12 d-flex justify-content-center ms-lg-1">
                   <Image
                     imgSrc={meImage}
                     imgAlt="Image of Me"
