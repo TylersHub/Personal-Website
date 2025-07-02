@@ -34,72 +34,71 @@ h2 {
 
 
 /* TypeWriter Effect */
-  
-  .typewriter {
-    box-sizing: border-box;
-    font-family: system-ui;
-    font-size: 16px;
-    line-height: 1.5;
-    display: flex;
-    justify-content: center;
+
+.typewriter {
+  box-sizing: border-box;
+  font-family: system-ui;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+}
+
+.typewriter p,
+.typewriter h1 {
+  font-family: monospace;
+  margin-inline: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 1px solid;
+  display: inline-block;
+  will-change: width;
+  transform: translateZ(0);
+}
+
+.typewriter p {
+  font-size: 2rem;
+  animation: typing 2s steps(22) forwards, blink 1s step-end 3;
+  animation-fill-mode: forwards;
+}
+
+.typewriter h1 {
+  font-size: 4rem;
+  animation: typing 2s steps(22) forwards, blink 1s step-end infinite;
+}
+
+/* Keyframes */
+@keyframes typing {
+  from {
+    width: 0;
   }
-  
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .typewriter h1,
   .typewriter p {
-    font-family: monospace;
-    font-size: 2rem;
-    margin-inline: auto;
-    overflow: hidden;
-    /* Keeps on a single line */
-    white-space: nowrap;
-    /* The cursor */
-    border-right: 1px solid;
-    /* steps = number of characters */
-    animation: typing 2s steps(22) forwards, blink 1s step-end 3;
-    animation-fill-mode: forwards;
+    white-space: normal;
   }
+}
 
-  .typewriter h1 {
-    font-family: monospace;
-    font-size: 4rem;
-    margin-inline: auto;
-    overflow: hidden;
-    /* Keeps on a single line */
-    white-space: nowrap;
-    /* The cursor */
-    border-right: 1px solid;
-    /* steps = number of characters */
-    animation: typing 2s steps(22) forwards, blink 1s step-end infinite;
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .typewriter h1,
+  .typewriter p {
+    animation: none;
+    border-right: none;
   }
-
-  
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-  
-    to {
-      width: 100%;
-    }
-  }
-  
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-    100% {
-      border-color: transparent;
-    }
-  }
-
-  @media (max-width: 992px) {
-    .typewriter h1 {
-      white-space: normal; /* Changes to normal on screens smaller than 600px */
-    }
-  }
-
-  @media (max-width: 992px) {
-    .typewriter p {
-      white-space: normal; /* Changes to normal on screens smaller than 600px */
-    }
-  }
-  
+}
