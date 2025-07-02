@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import HeroSection2 from "../components/HeroSection2";
 import Footer from "../components/Footer";
 import "/src/css/Timeline.css";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 
 const About = () => {
   return (
@@ -22,10 +23,10 @@ const About = () => {
         Hsubtext="I'm a computer science student with an Associate's Degree, currently working toward my Bachelor's Degree to further deepen my knowledge and skills in the field. As a curious and driven individual, I enjoy exploring new things, solving problems, and achieving meaningful results. My curiosity fuels a constant pursuit of knowledge and growth, leading me to work on personal projects and seek out opportunities to learn and improve."
       />
       <div className="text-white container-fluid main-blue ">
-        <div className="row justify-content-center">
-          <div className="col-12 col-md-10 p-5">
-            <h1 className="fw-bold pb-5">Languages</h1>
-            <div className="slider">
+        <div className="row justify-content-center pb-md-5 pb-3">
+          <div className="col-12 col-md-10 p-md-5 pt-5">
+            <h1 className="fw-bold pb-md-5">Languages</h1>
+            <div className="slider slider-blue">
               <div className="slide-track">
                 <div className="slide">
                   <img
@@ -128,37 +129,365 @@ const About = () => {
                 </div>
               </div>
             </div>
-
-            {/* <div className="row align-items-center py-5">
-      <div className="col-12 col-md mx-auto text-center d-flex flex-wrap justify-content-center gap-3">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" style={{ width: "5vw" }} alt="Python" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" style={{ width: "5vw" }} alt="Java" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style={{ width: "5vw" }} alt="JavaScript" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" style={{ width: "5vw" }} alt="TypeScript" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg" style={{ width: "5vw" }} alt="Solidity"/>
-      </div>
-
-      <div className="col-12 col-md mx-auto text-center d-flex flex-wrap justify-content-center gap-3">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" style={{ width: "5vw" }} alt="C++" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style={{ width: "5vw" }} alt="CSS3" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style={{ width: "5vw" }} alt="HTML5" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style={{ width: "5vw" }} alt="CSS3" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" style={{ width: "5vw" }} alt="Bootstrap"/>
-      </div>
-    </div> */}
           </div>
         </div>
-        <div className="main-dark row align-items-center">
-          <div className="col-12 col-md-6 mx-auto text-center">
-            <h1 className="fw-bold py-5">Other Technical Skills</h1>
+        <div className="main-dark row justify-content-center pb-md-5 pb-3">
+          <div className="col-12 col-md-10 p-md-5 pt-5">
+            <h1 className="fw-bold pb-md-5">Frameworks</h1>
+            <div className="slider slider-dark">
+              <div className="slide-track">
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+                    alt="Flask"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                    alt="Bootstrap"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                    alt="Express.js"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/hardhat/hardhat-original.svg"
+                    alt="Hardhat"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+                    alt="Flask"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                    alt="Bootstrap"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                    alt="Express.js"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/hardhat/hardhat-original.svg"
+                    alt="Hardhat"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+                    alt="Flask"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                    alt="Bootstrap"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                    alt="Express.js"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/hardhat/hardhat-original.svg"
+                    alt="Hardhat"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+                    alt="Flask"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                    alt="Bootstrap"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                    alt="Express.js"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/hardhat/hardhat-original.svg"
+                    alt="Hardhat"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+              </div>
+            </div>
+            {/* <h1 className="fw-bold py-5">Other Technical Skills</h1>
             <p>
-              Libraries: React, NumPy, Beautiful Soup, SQLAlchemy, Boost,
-              OpenGL, GLFW, ImGui, GLM
+              Libraries: React, NumPy, pandas, Beautiful Soup, SQLAlchemy, GLFW,
+              ImGui,
             </p>
-            <p>Frameworks: Flask, Bootstrap, Express.js, Selenium</p>
+            <p>Frameworks: Flask, Bootstrap, Express.js, Hardhat</p>
             <p className="pb-1 pb-sm-5">
-              Tools: VS Code, Visual Studio, Github, Node.js
-            </p>
+              Tools: VS Code, Visual Studio, Github, Node.js, vite, git, ollama
+            </p> */}
+          </div>
+        </div>
+
+        <div className="row justify-content-center pb-md-5 pb-3">
+          <div className="col-12 col-md-10 p-md-5 pt-5">
+            <h1 className="fw-bold pb-md-5">Libraries</h1>
+            <div className="slider slider-blue">
+              <div className="slide-track">
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    alt="React"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"
+                    alt="NumPy"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+                    alt="pandas"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlalchemy/sqlalchemy-original.svg"
+                    alt="SQLAlchemy"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    alt="React"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"
+                    alt="NumPy"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+                    alt="pandas"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlalchemy/sqlalchemy-original.svg"
+                    alt="SQLAlchemy"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    alt="React"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"
+                    alt="NumPy"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+                    alt="pandas"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlalchemy/sqlalchemy-original.svg"
+                    alt="SQLAlchemy"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    alt="React"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"
+                    alt="NumPy"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+                    alt="pandas"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlalchemy/sqlalchemy-original.svg"
+                    alt="SQLAlchemy"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="main-dark row justify-content-center pb-md-5 pb-3">
+          <div className="col-12 col-md-10 p-md-5 pt-5">
+            <h1 className="fw-bold pb-md-5">Tools</h1>
+            <div className="slider slider-dark">
+              <div className="slide-track">
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                    alt="VS Code"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
+                    alt="Visual Studio"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    alt="GitHub"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                    alt="Node.js"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://vitejs.dev/logo.svg"
+                    alt="Vite"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                    alt="Git"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://ollama.com/public/ollama.png"
+                    alt="Ollama"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                    alt="VS Code"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
+                    alt="Visual Studio"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    alt="GitHub"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                    alt="Node.js"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://vitejs.dev/logo.svg"
+                    alt="Vite"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                    alt="Git"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+                <div className="slide">
+                  <img
+                    src="https://ollama.com/public/ollama.png"
+                    alt="Ollama"
+                    style={{ width: "8vw" }}
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -167,6 +496,37 @@ const About = () => {
             <section id="cd-timeline" className="cd-container">
               <div className="cd-timeline-block">
                 <div className="cd-timeline-img cd-picture"></div>
+
+                <div className="cd-timeline-block">
+                  <div className="cd-timeline-img cd-picture"></div>
+                  <div className="cd-timeline-content">
+                    <h2>Remora</h2>
+                    <div className="timeline-content-info">
+                      <span className="timeline-content-info-title">
+                        <i className="fa fa-certificate" aria-hidden="true"></i>
+                        Blockchain Developer Intern
+                      </span>
+                      <span className="timeline-content-info-date">
+                        <i className="fa fa-calendar-o" aria-hidden="true"></i>
+                        June 2025 - Present
+                      </span>
+                    </div>
+                    <p>
+                      Reviewed Solidity smart contracts to understand
+                      functionality, logic, and storage patterns. Carefully
+                      tested and debugged contracts using Hardhat, identifying
+                      edge cases, and ensuring proper execution. Collaborated
+                      with the team to verify contract behavior on local and
+                      test networks before deployment.
+                    </p>
+                    <ul className="content-skills">
+                      <li>Solidity</li>
+                      <li>JavaScript</li>
+                      <li>Hardhat</li>
+                      <li>OpenZeppelin</li>
+                    </ul>
+                  </div>
+                </div>
 
                 <div className="cd-timeline-content">
                   <h2>The City College of New York</h2>
@@ -177,7 +537,7 @@ const About = () => {
                     </span>
                     <span className="timeline-content-info-date">
                       <i className="fa fa-calendar-o" aria-hidden="true"></i>
-                      October 2024 - Present
+                      October 2024 - January 2025
                     </span>
                   </div>
                   <p>
@@ -204,7 +564,7 @@ const About = () => {
                   <div className="timeline-content-info">
                     <span className="timeline-content-info-title">
                       <i className="fa fa-certificate" aria-hidden="true"></i>
-                      Full Stack Developer
+                      Full Stack Developer Intern
                     </span>
                     <span className="timeline-content-info-date">
                       <i className="fa fa-calendar-o" aria-hidden="true"></i>
@@ -248,7 +608,8 @@ const About = () => {
               </div>
               <div className="col-6 mx-auto text-center">
                 <p className="p-2 p-sm-5">
-                  Computer Builder: Built a few custom computers for friends
+                  Harvard Hackathon: EasyA x Polkadot hackathon at Harvard
+                  University building a DeFi App in under 24 hours
                 </p>
               </div>
             </div>
@@ -261,8 +622,21 @@ const About = () => {
               </div>
               <div className="col-6  mx-auto text-center">
                 <p className="p-2 p-sm-5">
+                  Google x Kaggle Generative AI Course: Intro to generative AI
+                  with hands-on labs and certification
+                </p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-6 mx-auto text-center">
+                <p className="p-2 p-sm-5">
                   Codecademy Computer Science Course: An online course offering
                   a professional computer science certificate
+                </p>
+              </div>
+              <div className="col-6  mx-auto text-center">
+                <p className="p-2 p-sm-5">
+                  Computer Builder: Built a few custom computers for friends
                 </p>
               </div>
             </div>
@@ -275,6 +649,7 @@ const About = () => {
         fText2="18tyler.rosa1@gmail.com"
         fText3=" Tyler Rosa. All rights reserved."
       />
+      <ScrollToTopButton />
     </div>
   );
 };

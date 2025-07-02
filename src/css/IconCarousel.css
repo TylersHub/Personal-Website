@@ -27,13 +27,24 @@
   width: 50vw;
 }
 .slider::before, .slider::after {
-  background: linear-gradient(to right, rgb(10, 37, 64) 0%, rgba(255, 255, 255, 0) 100%);
+  /* background: linear-gradient(to right, rgba(10, 37, 64, 255) 0%, rgb(255, 87, 34, 0) 100%); */
   content: "";
   height: 20vh;
   position: absolute;
   width: 20vw;
   z-index: 2;
+  will-change: opacity, transform;
+  backface-visibility: hidden;
 }
+
+.slider-dark::before, .slider-dark::after {
+  background: linear-gradient(to right, rgb(30, 35, 43) 0%, rgba(30, 35, 43, 0) 75%);
+}
+
+.slider-blue::before, .slider-blue::after {
+  background: linear-gradient(to right, rgb(10, 37, 64) 0%, rgba(10, 37, 64, 0) 75%);
+}
+
 .slider::after {
   right: 0;
   top: 0;
